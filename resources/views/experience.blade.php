@@ -10,17 +10,17 @@
     <title>Digital Experience | Solo Smartcity</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{{asset("web/vendor/bootstrap/css/bootstrap.min.css")}}">
+    <link rel="stylesheet" href="{{asset("vendor/bootstrap/css/bootstrap.min.css")}}">
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
-    <link rel="stylesheet" href="{{asset("web/assets/css/fontawesome.css")}}">
+    <link rel="stylesheet" href="{{asset("assets/css/fontawesome.css")}}">
     <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
-    <link rel="stylesheet" href="{{asset("web/assets/css/style.css")}}">
-    <link rel="stylesheet" href="{{asset("web/assets/css/owl.css")}}">
-    <link rel="stylesheet" href="{{asset("web/assets/css/animate.css")}}">
+    <link rel="stylesheet" href="{{asset("assets/css/style.css")}}">
+    <link rel="stylesheet" href="{{asset("assets/css/owl.css")}}">
+    <link rel="stylesheet" href="{{asset("assets/css/animate.css")}}">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="{{asset("web/assets/css/swiper-bundle.min.css")}}">
+    <link rel="stylesheet" href="{{asset("assets/css/swiper-bundle.min.css")}}">
 
     <!--
 
@@ -228,14 +228,14 @@ https://templatemo.com/tm-591-villa-agency
 
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
-    <script src="{{asset("web/vendor/jquery/jquery.min.js")}}"></script>
-    <script src="{{asset("web/vendor/bootstrap/js/bootstrap.min.js")}}"></script>
-    <script src="{{asset("web/assets/js/isotope.min.js")}}"></script>
-    <script src="{{asset("web/assets/js/owl-carousel.js")}}"></script>
-    <script src="{{asset("web/assets/js/counter.js")}}"></script>
-    <script src="{{asset("web/assets/js/custom.js")}}"></script>
-    <script src="{{asset("web/assets/js/swiper-bundle.min.js")}}"></script>
-    <script src="{{asset("web/assets/js/main.js")}}"></script>
+    <script src="{{asset("vendor/jquery/jquery.min.js")}}"></script>
+    <script src="{{asset("vendor/bootstrap/js/bootstrap.min.js")}}"></script>
+    <script src="{{asset("assets/js/isotope.min.js")}}"></script>
+    <script src="{{asset("assets/js/owl-carousel.js")}}"></script>
+    <script src="{{asset("assets/js/counter.js")}}"></script>
+    <script src="{{asset("assets/js/custom.js")}}"></script>
+    <script src="{{asset("assets/js/swiper-bundle.min.js")}}"></script>
+    <script src="{{asset("assets/js/main.js")}}"></script>
 </body>
 
 </html>

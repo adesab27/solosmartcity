@@ -14,29 +14,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view("web.index");
+    return view("index");
 });
 
 Route::get('/dimensi', function () {
-    return view("web.dimensi");
+    return view("dimensi");
 });
 
 Route::get('/dimensidetail', function () {
-    return view("web.dimensidetail");
+    return view("dimensidetail");
 });
 
 Route::get('/dimensiutama', function () {
-    return view("web.dimensiutama");
+    return view("dimensiutama");
 });
 
 Route::get('/experience', function () {
-    return view("web.experience");
+    return view("experience");
 });
 
 Route::get('/soloevent', function () {
-    return view("web.soloevent");
+    return view("soloevent");
 });
 
 Route::get('/tentang', function () {
-    return view("web.tentang");
+    return view("tentang");
 });
