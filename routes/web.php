@@ -40,3 +40,6 @@ Route::get('/soloevent', function () {
 Route::get('/tentang', function () {
     return view("tentang");
 });
+
+// Route::get('/beranda', [berandaController::class,'index']);
+Route::get('/beranda', [App\Http\Controllers\berandaController::class, 'index']);
