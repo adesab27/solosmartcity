@@ -1,6 +1,8 @@
 {{-- isi beranda --}}
 @extends('index')
 
+@section('title', 'beranda')
+
 @section('content')
 <div class="main-banner">
     <div class="owl-carousel owl-banner">
@@ -30,40 +32,52 @@
     <h3>Dimensi Smartcity</h3><br><br>
     <div class="smart-card">
       <div class="smart_link">
+        <a href="/dimensi">
         <div class="konten">
           <img src="{{asset("assets/images/governance.jpg")}}" />
           <h1>Smart Governance</h1>
         </div>
+        </a>
       </div>
       <div class="smart_link">
+        <a href="/dimensi">
         <div class="konten">
           <img src="{{asset("assets/images/branding.jpg")}}" />
           <h1>Smart Branding</h1>
         </div>
+        </a>
       </div>
       <div class="smart_link">
+        <a href="/dimensi">
         <div class="konten">
           <img src="{{asset("assets/images/economy.jpg")}}" />
           <h1>Smart Economy</h1>
         </div>
+        </a>
       </div>
       <div class="smart_link">
+        <a href="/dimensi">
         <div class="konten">
           <img src="{{asset("assets/images/living.jpg")}}" />
           <h1>Smart Living</h1>
         </div>
+        </a>
       </div>
       <div class="smart_link">
+        <a href="/dimensi">
         <div class="konten">
           <img src="{{asset("assets/images/environtment.jpg")}}" />
           <h1>Smart Environment</h1>
         </div>
+        </a>
       </div>
       <div class="smart_link">
+        <a href="/dimensi">
         <div class="konten">
           <img src="{{asset("assets/images/society.jpg")}}" />
           <h1>Smart Society</h1>
         </div>
+        </a>
       </div>
     </div>
   </div>

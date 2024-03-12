@@ -13,33 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view("index");
-});
-
-Route::get('/dimensi', function () {
-    return view("dimensi");
-});
-
-Route::get('/dimensidetail', function () {
-    return view("dimensidetail");
-});
-
-Route::get('/dimensiutama', function () {
-    return view("dimensiutama");
-});
-
-Route::get('/experience', function () {
-    return view("experience");
-});
-
-Route::get('/soloevent', function () {
-    return view("soloevent");
-});
-
-Route::get('/tentang', function () {
-    return view("tentang");
-});
-
-// Route::get('/beranda', [berandaController::class,'index']);
 Route::get('/beranda', [App\Http\Controllers\berandaController::class, 'index']);
+
+Route::get('/tentang', [App\Http\Controllers\tentangController::class, 'index']);
+
+Route::get('/dimensi', [App\Http\Controllers\dimensiController::class, 'index']);
+
+Route::get('/soloevent', [App\Http\Controllers\soloeventController::class, 'index']);
+
+Route::get('/experience', [App\Http\Controllers\experienceController::class, 'index']);
+
+Route::get('/dimensiutama', [App\Http\Controllers\dimensiutamaController::class, 'index']);
+
+Route::get('/dimensidetail', [App\Http\Controllers\dimensidetailController::class, 'index']);

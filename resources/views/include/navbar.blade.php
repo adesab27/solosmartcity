@@ -5,17 +5,17 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
+            <a href="/beranda" class="logo">
               <h1>SoloSmartcity</h1>
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li><a href="index.html" class="active">Beranda</a></li>
-              <li><a href="tentang.html">Tentang</a></li>
-              <li><a href="dimensi-utama.html">Dimensi</a></li>
-              <li><a href="solo-event.html">Solo Events</a></li>
-              <li><a href="experience.html">Digital Experience</a></li>
+              <li><a href="/beranda" class="{{ request()->is('beranda') ? 'active' : '' }}">Beranda</a></li>
+              <li><a href="/tentang" class="{{ request()->is('tentang') ? 'active' : '' }}">Tentang</a></li>
+              <li><a href="/dimensiutama" class="{{ request()->is('dimensiutama') ? 'active' : '' }}">Dimensi</a></li>
+              <li><a href="/soloevent" class="{{ request()->is('soloevent') ? 'active' : '' }}">Solo Events</a></li>
+              <li><a href="/experience" class="{{ request()->is('experience') ? 'active' : '' }}">Digital Experience</a></li>
               <li>
                 <a href="#"><i class="fa fa-search"></i> Search</a>
               </li>
