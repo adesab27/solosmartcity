@@ -38,27 +38,6 @@
           <a href="/dimensi">Smart Society</a>
         </li>
       </ul>
-
-      <!-- <ul class="properties-filter tahun">
-        <li>
-          <a class="is_active" href="#!" data-filter="*">Show All</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".adv">2020</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".adv">2021</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".adv">2022</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".adv">2023</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".adv">2024</a>
-        </li>
-      </ul> -->
     </div>
   </div>
 
