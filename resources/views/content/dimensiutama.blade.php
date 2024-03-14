@@ -9,7 +9,6 @@
       <div class="row">
         <div class="col-lg-12">
           <h2>Smart City</h2>
-          <h1>Branding</h1>
           <h3>Solo Metamorfosa Kota Budaya</h3>
         </div>
       </div>

@@ -9,31 +9,31 @@
       <div class="item item-1">
         <div class="header-text">
           <span class="category">SmartCity <em>Kota Solo</em></span>
-          <h2>Hurry!<br />Get the Best Villa for you</h2>
+          <h2>Kota Gede Surakarta</h2>
         </div>
       </div>
       <div class="item item-2">
         <div class="header-text">
           <span class="category">SmartCity <em>Kota Solo</em></span>
-          <h2>Be Quick!<br />Get the best villa in town</h2>
+          <h2>Keraton Mangkunegaran</h2>
         </div>
       </div>
       <div class="item item-3">
         <div class="header-text">
           <span class="category">SmartCity <em>Kota Solo</em></span>
-          <h2>Act Now!<br />Get the highest level</h2>
+          <h2>Solo Art Ngarsopuro</h2>
         </div>
       </div>
       <div class="item item-4">
         <div class="header-text">
           <span class="category">SmartCity <em>Kota Solo</em></span>
-          <h2>Act Now!<br />Get the highest level</h2>
+          <h2>Masjid Zayyed</h2>
         </div>
       </div>
       <div class="item item-5">
         <div class="header-text">
           <span class="category">SmartCity <em>Kota Solo</em></span>
-          <h2>Act Now!<br />Get the highest level</h2>
+          <h2>Taman Balekambang</h2>
         </div>
       </div>
     </div>

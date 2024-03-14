@@ -4,9 +4,18 @@
 @section('title', 'experience')
 
 @section('content')
-<div class="tm-home-img-container">
-</div>
+{{-- <div class="tm-home-img-container">
+</div> --}}
 <section class='tm-section'>
+    <div class="main-banner">
+        <div class="item item-51">
+            <div class="header-text">
+                <span class="category">Surakarta, <em>Jawa Tengah</em></span>
+                <h3>Kota Budaya<br />yang Modern Tangguh Gesit Kreatif dan Sejahtera.</h3>
+            </div>
+        </div>
+    </div>
+    
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center">
@@ -15,6 +24,7 @@
                     Makanan Lezat yang Menyegarkan Selera, Pengalaman Wisata yang Tidak Terlupakan.</p>
             </div>
         </div>
+
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
 

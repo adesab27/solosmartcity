@@ -12,7 +12,6 @@
             </div>
         </div>
     </div>
-    </div>
     <div class='container-w3-bgc'>
         <div class="w3-container">
             <h2>SMART CITY</h2>

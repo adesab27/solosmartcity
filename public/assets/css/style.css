@@ -699,6 +699,10 @@ Banner Style
   background-image: url(../images/balekambang.jpg);
 }
 
+.main-banner .item-51 {
+  background-image: url(../images/keraton.jpg);
+}
+
 .main-banner .item span.category {
   background-color: #fff;
   color: #1e1e1e;
@@ -1675,7 +1679,7 @@ Page Header Style
 */
 
 .page-heading {
-  background-image: url(../images/page-heading-bg.jpg);
+  background-image: url(../images/keraton.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2348,7 +2352,7 @@ Dimensi-Utama Style
 
 
 .tm-home-img-container {
-  background-image: url('../images/banner-04.jpg');
+  background-image: url('../images/keraton.jpg');
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
