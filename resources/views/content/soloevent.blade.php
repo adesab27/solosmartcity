@@ -248,58 +248,58 @@
         <h1>GALERY SOLOEVENT</h1>
         <div class="gallery">
           <div class="galeri-img">
-            <img src="assets/images/imgse/closed-01.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-2.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/closed-02.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-3.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/closed-03.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-4.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/featured-01.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-5.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/featured-02.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-5.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/featured-03.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-6.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/waiting-01.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-7.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/waiting-02.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-8.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/waiting-03.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-9.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/waiting-04.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-10.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/featured-image-01.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-11.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/featured-image-02.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-12.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/featured-image-03.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-13.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/featured-image-04.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-14.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/featured-image-05.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-15.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/featured-image-01.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-16.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/waiting-04.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-17.jpg")}}"/>
           </div>
           <div class="galeri-img">
-            <img src="assets/images/imgse/featured-image-01.jpg"/>
+            <img src="{{asset("assets/images/imgse/galeri-18.jpg")}}"/>
           </div>
         </div>
       </section>
