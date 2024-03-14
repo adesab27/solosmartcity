@@ -8,19 +8,31 @@
     <div class="owl-carousel owl-banner">
       <div class="item item-1">
         <div class="header-text">
-          <span class="category">Toronto, <em>Canada</em></span>
+          <span class="category">SmartCity <em>Kota Solo</em></span>
           <h2>Hurry!<br />Get the Best Villa for you</h2>
         </div>
       </div>
       <div class="item item-2">
         <div class="header-text">
-          <span class="category">Melbourne, <em>Australia</em></span>
+          <span class="category">SmartCity <em>Kota Solo</em></span>
           <h2>Be Quick!<br />Get the best villa in town</h2>
         </div>
       </div>
       <div class="item item-3">
         <div class="header-text">
-          <span class="category">Miami, <em>South Florida</em></span>
+          <span class="category">SmartCity <em>Kota Solo</em></span>
+          <h2>Act Now!<br />Get the highest level</h2>
+        </div>
+      </div>
+      <div class="item item-4">
+        <div class="header-text">
+          <span class="category">SmartCity <em>Kota Solo</em></span>
+          <h2>Act Now!<br />Get the highest level</h2>
+        </div>
+      </div>
+      <div class="item item-5">
+        <div class="header-text">
+          <span class="category">SmartCity <em>Kota Solo</em></span>
           <h2>Act Now!<br />Get the highest level</h2>
         </div>
       </div>
@@ -84,6 +96,49 @@
 
   <!-- end 6 dimensi -->
 
+  <!-- deskripsi kota budaya -->
+
+  <div class="kota-budaya">
+        <div class="container-foto">
+          <div class="row">
+            <div class="budaya-foto">
+              <div class="des-foto">
+                <div class="des-foto1">
+                  <img src="{{asset("assets/images/budaya-1.jpg")}}"/>
+                </div>
+              </div>
+              <div class="des-foto">
+                <div class="des-foto2">
+                  <img src="{{asset("assets/images/budaya-2.jpg")}}"/>
+                </div>
+              </div>
+            </div>
+            <div class="des-budaya">
+              <h2>Solo Metamorfosa Kota Budaya</h2></br>
+              <p>menata kembali
+                wajah kota yang mencerminkan
+                nilai-nilai daerah dan mengikuti
+                dinamika modernisasi yang
+                menginginkan sebuah tata wilayah
+                kota yang indah, bersih, rapi, dan
+                
+                membanggakan</p></br>
+              <p>membangun
+                platform dan memasarkan
+                ekosistem perdagangan yang
+                kondusif dan nyaman, ekosistem
+                investasi yang mudah dan efektif,
+                dan memasarkan produk dan
+                jasa industri kreatif daerah baik
+                tingkat lokal, nasional maupun
+                internasional</p></br>
+              <h4></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- end deskripsi kota budaya -->
   <div class="video section">
     <div class="container">
       <div class="row">
