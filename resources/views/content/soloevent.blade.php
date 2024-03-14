@@ -186,7 +186,7 @@
                   </div>
                 </div>
                 <div class="thumb">
-                  <img src="assets/images/imgse/popular-01.png" alt="">
+                  <img src="{{asset("assets/images/imgse/galeri-15.jpg")}}" alt="">
                 </div>
                 <div class="border-button">
                   <h5>Some details about events here</h5>
@@ -201,7 +201,7 @@
                   </div>
                 </div>
                 <div class="thumb">
-                  <img src="assets/images/imgse/popular-02.png" alt="">
+                  <img src="{{asset("assets/images/imgse/galeri-18.jpg")}}" alt="">
                 </div>
                 <div class="border-button">
                     <h5>Some details about events here</h5>
@@ -216,7 +216,7 @@
                   </div>
                 </div>
                 <div class="thumb">
-                  <img src="assets/images/imgse/popular-03.png" alt="">
+                  <img src="{{asset("assets/images/imgse/galeri-1.jpg")}}" alt="">
                 </div>
                 <div class="border-button">
                     <h5>Some details about events here</h5>
@@ -231,7 +231,7 @@
                   </div>
                 </div>
                 <div class="thumb">
-                  <img src="assets/images/imgse/popular-04.png" alt="">
+                  <img src="{{asset("assets/images/imgse/galeri-16.jpg")}}" alt="">
                 </div>
                 <div class="border-button">
                     <h5>Some details about events here</h5>
