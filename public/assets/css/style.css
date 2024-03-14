@@ -844,7 +844,7 @@ section.featured-items {
 
 .featured-items .item .thumb .hover-effect .content h4 {
   font-size: 20px;
-  color: #00bdfe;
+  color: red;
   margin-bottom: 22px;
 }
 
@@ -876,6 +876,23 @@ section.featured-items {
   font-weight: 500;
 }
 
+/* Styling untuk tombol */
+.featured-items .item .thumb .hover-effect .content button {
+  background-color: rgb(226, 158, 158); /* Warna latar belakang */
+  color: white; /* Warna teks */
+  padding: 10px 20px; /* Padding */
+  border: none; /* Menghilangkan border */
+  border-radius: 5px; /* Membuat sudut tombol menjadi melengkung */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat diarahkan ke tombol */
+  transition: background-color 0.3s; /* Efek transisi saat mouse hover */
+}
+
+/* Efek hover */
+.featured-items .item .thumb .hover-effect .content button:hover {
+  background-color: red; /* Warna latar belakang saat dihover */
+}
+
+
 .featured-items .owl-nav {
   position: absolute;
   width: 100%;
@@ -901,7 +918,7 @@ section.featured-items {
   font-size: 24px;
   display: inline-block;
   color: #fff;
-  background-color: #00bdfe;
+  background-color: red;
   border-radius: 50%;
   opacity: 0.75;
   transition: all .3s;

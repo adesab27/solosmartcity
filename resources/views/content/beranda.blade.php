@@ -156,7 +156,7 @@
           <div class="video-frame">
             <a href="https://youtube.com" target="_blank">
               <img
-                src="{{asset("assets/images/video-frame.jpg")}}"
+                src="{{asset("assets/images/surakarta-video.jpg")}}"
                 alt=""
                 href="https://youtube.com"
               />
