@@ -1188,8 +1188,7 @@ Video Style
 */
 
 .video {
-  background-color: red;
-  filter: opacity(0.04);
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1209,13 +1208,19 @@ Video Style
 .video-content .video-frame {
   position: relative;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
-  border-radius: 50px;
+  border-radius: 60px;
+  margin-left: 30px;
 }
 
 .video-content .video-frame img {
-  border-radius: 25px;
+  border-radius: 60px;
   width: 1150px;
-  height: 311px;
+  height: 300px;
+  opacity: 0.9;
+}
+
+.video-content .video-frame:hover img {
+  opacity: 1;
 }
 
 /* Slider */
