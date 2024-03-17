@@ -1462,31 +1462,55 @@ Trending
 --------------------------------------------- 
 */
 
-.mb-3 {
-  width: 250px; 
-  float: right;
+.single_footer_top {
+  float: left;
+  display: inline;
+  width: 100%;
+  padding-bottom: 30px;
 }
 
-.section-title {
-  margin-top: 55px;
+.single_footer_top > h2 {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-left: 0 none;
+  border-right: 0 none;
+  color: #520b0b;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+.single_footer_top ul li a {
+  color: #0f0101;
 }
 
-.border-left-0 {
-  flex: 1;
+.ppost_nav li {
+  border-top: none;
 }
 
-.text-secondary {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.catg3_snav li {
+  border-top: 1px solid #f1f1f1;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 
-.float-right {
-  float: right;
-  padding-right: -60px;
+.catg_title {
+  color: #111;
+  display: block;
+  font-size: 14px;
+  line-height: 23px;
+  margin-bottom: 7px;
 }
-
-
+.catg_title:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  content: "";
+  margin-right: 5px;
+}
 /* 
 ---------------------------------------------
 Properties Style
