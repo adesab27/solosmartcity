@@ -1480,8 +1480,12 @@ Trending
   margin-bottom: 15px;
   padding: 10px 0;
 }
-.single_footer_top ul li a {
+.single_footer_top ul li img{
   color: #0f0101;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 7px;
 }
 
 .ppost_nav li {

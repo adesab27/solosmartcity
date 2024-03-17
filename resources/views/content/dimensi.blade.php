@@ -64,6 +64,22 @@
       </div>
     <!-- Popular News End -->
 
+    {{-- Lapor Wali --}}
+    <div class="col-lg-3 col-md-3 col-sm-6">
+      <div class="single_footer_top">
+        <h2>Layanan Lapor MasWali</h2>
+        <ul class="ppost_nav">
+          <li>
+            <img src="{{ asset('assets/images/lapor-wali.jpg') }}">
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    
+
+
+
       <div class="row properties-box">
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
           <div class="item">
