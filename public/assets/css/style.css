@@ -1333,7 +1333,6 @@ Video Style
 /* slider end */
 
 /* card */
-
 .dimensi-smart{
   text-align: center;
 }
@@ -1369,10 +1368,31 @@ Video Style
   width: 380px; 
   height: 175px; 
   margin: 42px; 
-  background-color: #fbd9cf;
+  background-color: #fff;
   box-sizing: border-box;
   overflow: hidden;
+  transition: background-color 0.7s;
 } 
+/* Tambahkan efek hover */
+.smart_link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: red;  /* Ubah warna latar belakang saat di-hover */
+}
+
+/* Tambahkan animasi pada gambar */
+.konten img:hover {
+  transform: scale(1.1);
+}
+
+/* Animasi untuk judul h1 */
+.konten h1 {
+  transition: color 0.3s ease;
+}
+
+.smart_link:hover .konten h1 {
+  color: #fff; /* Ubah warna judul saat di-hover */
+}
 
 /* style deskripsi kota budaya */
 /* deskripsi budaya */
