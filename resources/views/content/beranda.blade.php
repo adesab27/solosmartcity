@@ -170,19 +170,7 @@
   <div class="kota-budaya">
         <div class="container-foto">
           <div class="row">
-            <div class="budaya-foto">
-              <div class="des-foto">
-                <div class="des-foto1">
-                  <img src="{{asset("assets/images/budaya-1.jpg")}}"/>
-                </div>
-              </div>
-              <div class="des-foto">
-                <div class="des-foto2">
-                  <img src="{{asset("assets/images/budaya-2.jpg")}}"/>
-                </div>
-              </div>
-            </div>
-            <div class="des-budaya">
+          <div class="des-budaya">
               <h2>Solo Metamorfosa Kota Budaya</h2></br>
               <p>menata kembali
                 wajah kota yang mencerminkan
@@ -203,6 +191,19 @@
                 internasional</p></br>
               <h4></h4>
             </div>
+            <div class="budaya-foto">
+              <div class="des-foto">
+                <div class="des-foto1">
+                  <img src="{{asset("assets/images/budaya-1.jpg")}}"/>
+                </div>
+              </div>
+              <div class="des-foto">
+                <div class="des-foto2">
+                  <img src="{{asset("assets/images/budaya-2.jpg")}}"/>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
