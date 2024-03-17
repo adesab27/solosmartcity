@@ -290,7 +290,7 @@ body {
 }
 
 .main-button a:hover {
-  background-color: #f35525;
+  background-color: var(--first-color-light);
   color: #fff;
 }
 
@@ -702,7 +702,7 @@ Banner Style
 
 .main-banner .item span.category {
   background-color: #fff;
-  color: #1e1e1e;
+  color: var(--first-color-dark);
   font-size: 16px;
   font-weight: 500;
   text-transform: capitalize;
@@ -713,7 +713,7 @@ Banner Style
 
 .main-banner .item span.category em {
   font-style: normal;
-  color: #f35525;
+  color: var(--first-color-dark);
 }
 
 .main-banner .item h2 {
@@ -750,7 +750,7 @@ Banner Style
 }
 
 .main-banner .owl-dots .active {
-  background-color: #f35525;
+  background-color: var(--first-color-light);
 }
 
 .main-banner .owl-nav {
@@ -854,13 +854,13 @@ section.featured-items {
 .featured-items .item .thumb .hover-effect .content h4 span {
   font-size: 14px;
   font-weight: 500;
-  color: #afafaf;
+  color: var(--first-color-dark);
 }
 
 .featured-items .item .thumb .hover-effect .content ul li {
   font-size: 15px;
   font-weight: 400;
-  color: #afafaf;
+  color: var(--first-color-light);
   margin-bottom: 7px;
 }
 
@@ -869,13 +869,13 @@ section.featured-items {
 }
 
 .featured-items .item .thumb .hover-effect .content ul li span {
-  color: #2a2a2a;
+  color: var(--first-color-light);
   font-weight: 500;
 }
 
 /* Styling untuk tombol */
 .featured-items .item .thumb .hover-effect .content button {
-  background-color: rgb(226, 158, 158); /* Warna latar belakang */
+  background-color: var(--first-color-light); /* Warna latar belakang */
   color: white; /* Warna teks */
   padding: 10px 20px; /* Padding */
   border: none; /* Menghilangkan border */
@@ -989,7 +989,7 @@ section.popular-categories .main-button {
   padding: 5px 8px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  color: #00bdfe;
+  color: var(--first-color-dark);
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
   margin-right: 10px;
@@ -1011,7 +1011,7 @@ section.popular-categories .main-button {
 
 .popular-item .thumb span.category {
   font-size: 15px;
-  color: #00bdfe;
+  color: var(--first-color-dark);
   background-color: #fff;
   border-radius: 10px;
   font-weight: 500;
@@ -1025,7 +1025,7 @@ section.popular-categories .main-button {
 
 .popular-item .thumb span.likes {
   font-size: 15px;
-  color: #00bdfe;
+  color: var(--first-color-dark);
   background-color: #fff;
   border-radius: 10px;
   font-weight: 500;
@@ -1439,7 +1439,7 @@ Video Style
   color: white;
 }
 .des-budaya p{
-  color:  black;
+  color:  var(--first-color-dark);
 }
 
 .kota-budaya .container-foto {
@@ -1540,7 +1540,7 @@ Properties Style
   font-weight: 500;
   border-radius: 5px;
   font-size: 14px;
-  color: #1e1e1e;
+  color: var(--first-color-dark);
   padding: 5px 12px;
   display: inline-block;
   margin-top: 25px;
@@ -1553,25 +1553,25 @@ Properties Style
 }
 
 .properties .item h4 a {
-  color: #1e1e1e;
+  color: var(--first-color-dark);
 }
 
 .properties .item h6 a {
   font-size: 14px;
-  color: #000;
+  color: var(--first-color-dark);
   font-weight: 400;
 }
 
 .properties .item ul li {
   display: inline-block;
   font-size: 15px;
-  color: #4a4a4a;
+  color: var(--first-color-light);
   margin-right: 20px;
 }
 
 .properties .item ul li span {
   font-weight: 600;
-  color: #1e1e1e;
+  color: var(--first-color-dark);
 }
 
 .properties .item ul {
@@ -1859,14 +1859,14 @@ Properties Style
   text-transform: capitalize;
   font-weight: 500;
   color: #fff;
-  background-color: #1e1e1e;
+  background-color: var(--first-color-dark);
   padding: 12px 25px;
   border-radius: 30px;
   transition: all 0.3s;
 }
 
 .properties ul.properties-filter li a.is_active {
-  background-color: #f35525;
+  background-color: var(--first-color-light);
   color: #fff;
 }
 
@@ -1875,7 +1875,7 @@ Properties Style
 }
 
 .properties ul.properties-filter li a:hover {
-  color: #f35525;
+  color: var(--first-color-light);
 }
 
 .properties ul.pagination {
@@ -1906,7 +1906,7 @@ Properties Style
 
 .properties ul.pagination li a:hover,
 .properties ul.pagination li a.is_active {
-  background-color: #f35525;
+  background-color: var(--first-color-light);
   color: #fff;
 }
 
@@ -2058,9 +2058,9 @@ Single Page Style
   font-size: 2.8em;
   font-weight: 650;
   letter-spacing: 1.5px;
-  color: #017bf5;
-  border-left: 5px solid #017bf5;
-  border-right: 5px solid #017bf5;
+  color: var(--first-color-light);
+  border-left: 5px solid var(--first-color-light);
+  border-right: 5px solid var(--first-color-light);
   background: rgba(0, 0, 0, 0.05);
 }
 
@@ -2512,7 +2512,7 @@ Dimensi-Utama Style
 }
 
 .tm-gold-text {
-  color: #f95b00;
+  color: var(--first-color-dark);
 }
 
 .tm-subtitle {
@@ -2525,7 +2525,7 @@ Dimensi-Utama Style
 
 .tm-btn-x {
   color: white;
-  background-color: #ff9f68;
+  background-color: var(--first-color-light);
   border: none;
   border-radius: 5px;
   display: inline-block;
