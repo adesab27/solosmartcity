@@ -1398,9 +1398,17 @@ Video Style
 /* deskripsi budaya */
 
 .kota-budaya{
-  margin-top: 100px;
+  background-color: rgba(255, 190, 190, 0.5);
+  margin-top: 150px;
   position: relative;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
+  padding-bottom: 120px;
+  padding-top: 20px;
+}
+
+.box-budaya{
+  width: 200px;
+  height: 200px;
 }
 
 .kota-budaya .row {
@@ -1411,9 +1419,8 @@ Video Style
 
 .des-foto .des-foto1{
   width: 250px;
-  height: 30px;
   margin-top: 10px;
-  margin-left: 125px;
+  margin-left: 140px;
 }
 .des-foto .des-foto2{
   width: 250px;
@@ -1427,10 +1434,10 @@ Video Style
 .des-budaya h2{
   font-size: 50px;
   font-weight: 500;
-  color: red;
+  color: white;
 }
 .des-budaya p{
-  color: rgb(231, 153, 153);
+  color: red;
 }
 
 .kota-budaya .container-foto {
@@ -1447,7 +1454,6 @@ Video Style
   flex: 1;
   margin: 0 10px; /* Mengatur jarak antara foto */
 }
-
 /* 
 ---------------------------------------------
 Properties Style
