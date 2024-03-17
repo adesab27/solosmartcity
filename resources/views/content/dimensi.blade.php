@@ -39,10 +39,65 @@
         </li>
       </ul>
 
+      <!-- Popular News Start -->
+      <div class="mb-3 float-right">
+        <div class="section-title mb-0">
+            <h4 class="m-0 text-uppercase font-weight-bold">Trending</h4>
+        </div>
+        <div class="bg-white border border-top-0 p-3">
+            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Smart Economy</a>
+                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                    </div>
+                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                </div>
+            </div>
+            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Smart Branding</a>
+                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                    </div>
+                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                </div>
+            </div>
+            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Smart Society</a>
+                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                    </div>
+                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                </div>
+            </div>
+            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Smart Living</a>
+                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                    </div>
+                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                </div>
+            </div>
+            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
+                <div class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
+                    <div class="mb-2">
+                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2" href="">Smart Governance</a>
+                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                    </div>
+                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum dolor sit amet elit...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popular News End -->
+
       <div class="row properties-box">
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-01.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">18 Old Street Miami, OR 97219</a></h4>
@@ -55,7 +110,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-02.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">54 New Street Florida, OR 27001</a></h4>
@@ -68,7 +123,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv rac">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-03.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">26 Mid Street Portland, OR 38540</a></h4>
@@ -81,7 +136,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-04.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">12 Hope Street Portland, OR 12650</a></h4>
@@ -94,7 +149,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-05.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">34 Hope Street Portland, OR 42680</a></h4>
@@ -107,7 +162,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-06.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">22 Hope Street Portland, OR 16540</a></h4>
@@ -120,7 +175,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-03.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">14 Mid Street Miami, OR 36450</a></h4>
@@ -133,7 +188,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-02.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">26 Old Street Miami, OR 12870</a></h4>
@@ -146,7 +201,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-01.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">34 New Street Miami, OR 24650</a></h4>
@@ -162,7 +217,7 @@
         <div class="col-lg-12">
           <ul class="pagination">
             <li><a href="#">1</a></li>
-            <li><a class="is_active" href="#">2</a></li>
+            <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">>></a></li>
           </ul>

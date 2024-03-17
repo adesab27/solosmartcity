@@ -1430,6 +1430,37 @@ Video Style
 
 /* 
 ---------------------------------------------
+Trending
+--------------------------------------------- 
+*/
+
+.mb-3 {
+  width: 250px; 
+  float: right;
+}
+
+.section-title {
+  margin-top: 55px;
+}
+
+.border-left-0 {
+  flex: 1;
+}
+
+.text-secondary {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.float-right {
+  float: right;
+  padding-right: -60px;
+}
+
+
+/* 
+---------------------------------------------
 Properties Style
 --------------------------------------------- 
 */
@@ -1438,12 +1469,14 @@ Properties Style
   background-color: #fafafa;
   border-radius: 10px;
   padding: 30px;
-  margin-bottom: 30px;
-
+  margin-top: 1px;
 }
 
 .properties .item img {
   border-radius: 10px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .properties .item span.category {
