@@ -2,21 +2,9 @@
     
     <div class="footer-left">
 
-      <h3>Solo<span>Smartcity</span></h3>
+      <h3>Solo<span> Smartcity</span></h3>
 
-      <p class="footer-links">
-        <a href="#" class="link-1">Beranda</a>
-        
-        <a href="#">Tentang</a>
-      
-        <a href="#">Dimensi</a>
-      
-        <a href="#">Solo Event</a>
-        
-        <a href="#">Digital Experience</a>
-      </p>
-
-      <p class="footer-company-name">Company Name © 2015</p>
+      <p class="footer-company-name">	&copy; Solo SmartCity</p>
     </div>
 
     <div class="footer-center">

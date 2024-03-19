@@ -115,23 +115,25 @@
             </div>
             <div class="des-budaya">
               <h2>Solo Metamorfosa Kota Budaya</h2></br>
-              <p>menata kembali
-                wajah kota yang mencerminkan
-                nilai-nilai daerah dan mengikuti
-                dinamika modernisasi yang
-                menginginkan sebuah tata wilayah
-                kota yang indah, bersih, rapi, dan
-                
-                membanggakan</p></br>
-              <p>membangun
-                platform dan memasarkan
-                ekosistem perdagangan yang
-                kondusif dan nyaman, ekosistem
-                investasi yang mudah dan efektif,
-                dan memasarkan produk dan
-                jasa industri kreatif daerah baik
-                tingkat lokal, nasional maupun
-                internasional</p></br>
+              <div class="budaya-text">
+                <p>menata kembali
+                  wajah kota yang mencerminkan
+                  nilai-nilai daerah dan mengikuti
+                  dinamika modernisasi yang
+                  menginginkan sebuah tata wilayah
+                  kota yang indah, bersih, rapi, dan
+                  
+                  membanggakan</p></br>
+                <p>membangun
+                  platform dan memasarkan
+                  ekosistem perdagangan yang
+                  kondusif dan nyaman, ekosistem
+                  investasi yang mudah dan efektif,
+                  dan memasarkan produk dan
+                  jasa industri kreatif daerah baik
+                  tingkat lokal, nasional maupun
+                  internasional</p></br>
+              </div>
               <h4></h4>
             </div>
           </div>
