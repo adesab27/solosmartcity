@@ -46,17 +46,17 @@
           <ul class="catg3_snav ppost_nav">
             <li>
               <div class="media"> 
-                <div class="media-body"> <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a></div>
+                <div class="media-body"> <a class="catg_title" href="#"> Revitalisasi Taman Balekambang</a></div>
               </div>
            </li>
             <li>
               <div class="media"> 
-                <div class="media-body"> <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a></div>
+                <div class="media-body"> <a class="catg_title" href="#"> Museum Lokananta</a></div>
               </div>
            </li>
             <li>
               <div class="media">
-                <div class="media-body"> <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a></div>
+                <div class="media-body"> <a class="catg_title" href="#"> Solo Technopark</a></div>
               </div>
            </li>
           </ul>

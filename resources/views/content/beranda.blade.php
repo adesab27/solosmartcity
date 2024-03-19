@@ -9,7 +9,7 @@
       <div class="item item-1">
         <div class="header-text">
           <span class="category">SmartCity <em>Kota Solo</em></span>
-          <h2>Kota Gede Surakarta</h2>
+          <h2>Pasar Gede Surakarta</h2>
         </div>
       </div>
       <div class="item item-2">
@@ -156,9 +156,9 @@
       <div class="row">
         <div class="col-lg-10 offset-lg-1">
           <div class="video-frame">
-            <a href="https://youtube.com" target="_blank">
+            <a href="https://www.youtube.com/watch?v=NeSyvBIsSxM" target="_blank">
               <img
-                src="{{asset("assets/images/surakarta-video.jpg")}}"
+                src="{{asset("assets/images/videoo.jpg")}}"
                 alt=""
                 href="https://youtube.com"
               />
