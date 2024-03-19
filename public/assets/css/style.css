@@ -31,14 +31,12 @@ font & reset css
 :root {
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(38, 92%, 58%);
-  --first-color-light: hsl(38, 100%, 78%);
-  --first-color-alt: hsl(32, 75%, 50%);
-  --second-color: hsl(195, 75%, 52%);
-  --dark-color: hsl(212, 40%, 12%);
-  --white-color: hsl(212, 4%, 95%);
-  --body-color: hsl(212, 42%, 15%);
-  --container-color: hsl(212, 42%, 20%);
+  --first-color: #577053;
+  --first-color-light: #6D9773;
+  --first-color-dark: #0C3A2F;
+  --second-color: #E6CCB3;
+  --second-color-dark: #CA5534;
+  --third-color: #512616;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -292,7 +290,7 @@ body {
 }
 
 .main-button a:hover {
-  background-color: #f35525;
+  background-color: var(--first-color-light);
   color: #fff;
 }
 
@@ -350,7 +348,7 @@ Header Style
   line-height: 100px;
   font-size: 18px;
   text-transform: uppercase;
-  color: #1e1e1e;
+  color: var(--first-color);
   font-weight: 700;
   letter-spacing: 2px;
 }
@@ -391,18 +389,17 @@ Header Style
   height: 40px;
   line-height: 40px;
   text-transform: capitalize;
-  color: #1e1e1e;
+  color: black;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
-  border: transparent;
   letter-spacing: 0.25px;
 }
 
 .header-area .main-nav .nav li:last-child a {
-  background-color: #1e1e1e;
-  color: #fff;
+  background-color: var(--first-color-light);
+  color: black;
   font-size: 14px;
   font-weight: 400;
   text-transform: none;
@@ -411,7 +408,7 @@ Header Style
 }
 
 .header-area .main-nav .nav li:last-child a i {
-  background-color: #f35525;
+  background-color: var(--first-color-light);
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -423,7 +420,7 @@ Header Style
 }
 
 .header-area .main-nav .nav li:last-child:hover a {
-  background-color: #1e1e1e;
+  background-color: var(--first-color-dark);
 }
 
 .header-area .main-nav .nav li:last-child:hover a i {
@@ -431,15 +428,15 @@ Header Style
 }
 
 .header-area .main-nav .nav li:hover a {
-  color: #f35525;
+  color: var(--first-color-light);
 }
 
 .header-area .main-nav .nav li a.active {
-  color: #f35525;
+  color: var(--first-color-light);
 }
 
 .background-header .main-nav .nav li a.active {
-  color: #f35525;
+  color: var(--first-color-light);
 }
 
 .header-area .main-nav .menu-trigger {
@@ -705,7 +702,7 @@ Banner Style
 
 .main-banner .item span.category {
   background-color: #fff;
-  color: #1e1e1e;
+  color: var(--first-color-dark);
   font-size: 16px;
   font-weight: 500;
   text-transform: capitalize;
@@ -716,7 +713,7 @@ Banner Style
 
 .main-banner .item span.category em {
   font-style: normal;
-  color: #f35525;
+  color: var(--first-color-dark);
 }
 
 .main-banner .item h2 {
@@ -753,7 +750,7 @@ Banner Style
 }
 
 .main-banner .owl-dots .active {
-  background-color: #f35525;
+  background-color: var(--first-color-light);
 }
 
 .main-banner .owl-nav {
@@ -844,7 +841,7 @@ section.featured-items {
 
 .featured-items .item .thumb .hover-effect .content h4 {
   font-size: 20px;
-  color: red;
+  color:  var(--first-color);
   margin-bottom: 22px;
 }
 
@@ -857,13 +854,13 @@ section.featured-items {
 .featured-items .item .thumb .hover-effect .content h4 span {
   font-size: 14px;
   font-weight: 500;
-  color: #afafaf;
+  color: var(--first-color-dark);
 }
 
 .featured-items .item .thumb .hover-effect .content ul li {
   font-size: 15px;
   font-weight: 400;
-  color: #afafaf;
+  color: var(--first-color-light);
   margin-bottom: 7px;
 }
 
@@ -872,13 +869,13 @@ section.featured-items {
 }
 
 .featured-items .item .thumb .hover-effect .content ul li span {
-  color: #2a2a2a;
+  color: var(--first-color-light);
   font-weight: 500;
 }
 
 /* Styling untuk tombol */
 .featured-items .item .thumb .hover-effect .content button {
-  background-color: rgb(226, 158, 158); /* Warna latar belakang */
+  background-color: var(--first-color-light); /* Warna latar belakang */
   color: white; /* Warna teks */
   padding: 10px 20px; /* Padding */
   border: none; /* Menghilangkan border */
@@ -889,7 +886,7 @@ section.featured-items {
 
 /* Efek hover */
 .featured-items .item .thumb .hover-effect .content button:hover {
-  background-color: red; /* Warna latar belakang saat dihover */
+  background-color:  var(--first-color); /* Warna latar belakang saat dihover */
 }
 
 
@@ -918,7 +915,7 @@ section.featured-items {
   font-size: 24px;
   display: inline-block;
   color: #fff;
-  background-color: red;
+  background-color:  var(--first-color);
   border-radius: 50%;
   opacity: 0.75;
   transition: all .3s;
@@ -992,7 +989,7 @@ section.popular-categories .main-button {
   padding: 5px 8px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  color: #00bdfe;
+  color: var(--first-color-dark);
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
   margin-right: 10px;
@@ -1014,7 +1011,7 @@ section.popular-categories .main-button {
 
 .popular-item .thumb span.category {
   font-size: 15px;
-  color: #00bdfe;
+  color: var(--first-color-dark);
   background-color: #fff;
   border-radius: 10px;
   font-weight: 500;
@@ -1028,7 +1025,7 @@ section.popular-categories .main-button {
 
 .popular-item .thumb span.likes {
   font-size: 15px;
-  color: #00bdfe;
+  color: var(--first-color-dark);
   background-color: #fff;
   border-radius: 10px;
   font-weight: 500;
@@ -1188,8 +1185,7 @@ Video Style
 */
 
 .video {
-  background-color: red;
-  filter: opacity(0.04);
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1209,13 +1205,19 @@ Video Style
 .video-content .video-frame {
   position: relative;
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
-  border-radius: 50px;
+  border-radius: 60px;
+  margin-left: 30px;
 }
 
 .video-content .video-frame img {
-  border-radius: 25px;
+  border-radius: 60px;
   width: 1150px;
-  height: 311px;
+  height: 300px;
+  opacity: 0.9;
+}
+
+.video-content .video-frame:hover img {
+  opacity: 1;
 }
 
 /* Slider */
@@ -1238,7 +1240,7 @@ Video Style
 }
 
 .card__data {
-  background-color: red;
+  background-color:  var(--first-color);
   padding: 1.5rem 2rem;
   border-radius: 1rem;
   text-align: center;
@@ -1376,8 +1378,8 @@ Video Style
 /* Tambahkan efek hover */
 .smart_link:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  background-color: red;  /* Ubah warna latar belakang saat di-hover */
+  box-shadow: 0 10px 20px var(--first-color-light);
+  background-color:  var(--first-color);  /* Ubah warna latar belakang saat di-hover */
 }
 
 /* Tambahkan animasi pada gambar */
@@ -1398,9 +1400,17 @@ Video Style
 /* deskripsi budaya */
 
 .kota-budaya{
-  margin-top: 100px;
+  background-color: var(--first-color-light);
+  margin-top: 150px;
   position: relative;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
+  padding-bottom: 120px;
+  padding-top: 20px;
+}
+
+.box-budaya{
+  width: 200px;
+  height: 200px;
 }
 
 .kota-budaya .row {
@@ -1411,9 +1421,8 @@ Video Style
 
 .des-foto .des-foto1{
   width: 250px;
-  height: 30px;
   margin-top: 10px;
-  margin-left: 125px;
+  margin-left: 140px;
 }
 .des-foto .des-foto2{
   width: 250px;
@@ -1431,10 +1440,10 @@ Video Style
 .des-budaya h2{
   font-size: 50px;
   font-weight: 500;
-  color: red;
+  color: white;
 }
 .des-budaya p{
-  color: rgb(231, 153, 153);
+  color:  var(--first-color-dark);
 }
 
 .kota-budaya .container-foto {
@@ -1451,7 +1460,65 @@ Video Style
   flex: 1;
   margin: 0 10px; /* Mengatur jarak antara foto */
 }
+/* 
+---------------------------------------------
+Trending
+--------------------------------------------- 
+*/
 
+.single_footer_top {
+  float: left;
+  display: inline;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.single_footer_top > h2 {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-left: 0 none;
+  border-right: 0 none;
+  color: #520b0b;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+.single_footer_top ul li img{
+  color: #0f0101;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 7px;
+}
+
+.ppost_nav li {
+  border-top: none;
+}
+
+.catg3_snav li {
+  border-top: 1px solid #f1f1f1;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.catg_title {
+  color: #111;
+  display: block;
+  font-size: 14px;
+  line-height: 23px;
+  margin-bottom: 7px;
+}
+.catg_title:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  content: "";
+  margin-right: 5px;
+}
 /* 
 ---------------------------------------------
 Properties Style
@@ -1462,12 +1529,14 @@ Properties Style
   background-color: #fafafa;
   border-radius: 10px;
   padding: 30px;
-  margin-bottom: 30px;
-
+  margin-top: 1px;
 }
 
 .properties .item img {
   border-radius: 10px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .properties .item span.category {
@@ -1475,7 +1544,7 @@ Properties Style
   font-weight: 500;
   border-radius: 5px;
   font-size: 14px;
-  color: #1e1e1e;
+  color: var(--first-color-dark);
   padding: 5px 12px;
   display: inline-block;
   margin-top: 25px;
@@ -1488,25 +1557,25 @@ Properties Style
 }
 
 .properties .item h4 a {
-  color: #1e1e1e;
+  color: var(--first-color-dark);
 }
 
 .properties .item h6 a {
   font-size: 14px;
-  color: #000;
+  color: var(--first-color-dark);
   font-weight: 400;
 }
 
 .properties .item ul li {
   display: inline-block;
   font-size: 15px;
-  color: #4a4a4a;
+  color: var(--first-color-light);
   margin-right: 20px;
 }
 
 .properties .item ul li span {
   font-weight: 600;
-  color: #1e1e1e;
+  color: var(--first-color-dark);
 }
 
 .properties .item ul {
@@ -1529,7 +1598,7 @@ Footer Style
 
 
 .footer-distributed{
-	background: red;
+	background: var(--first-color);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -1794,14 +1863,14 @@ Properties Style
   text-transform: capitalize;
   font-weight: 500;
   color: #fff;
-  background-color: #1e1e1e;
+  background-color: var(--first-color-dark);
   padding: 12px 25px;
   border-radius: 30px;
   transition: all 0.3s;
 }
 
 .properties ul.properties-filter li a.is_active {
-  background-color: #f35525;
+  background-color: var(--first-color-light);
   color: #fff;
 }
 
@@ -1810,7 +1879,7 @@ Properties Style
 }
 
 .properties ul.properties-filter li a:hover {
-  color: #f35525;
+  color: var(--first-color-light);
 }
 
 .properties ul.pagination {
@@ -1841,7 +1910,7 @@ Properties Style
 
 .properties ul.pagination li a:hover,
 .properties ul.pagination li a.is_active {
-  background-color: #f35525;
+  background-color: var(--first-color-light);
   color: #fff;
 }
 
@@ -1993,9 +2062,9 @@ Single Page Style
   font-size: 2.8em;
   font-weight: 650;
   letter-spacing: 1.5px;
-  color: #017bf5;
-  border-left: 5px solid #017bf5;
-  border-right: 5px solid #017bf5;
+  color: var(--first-color-light);
+  border-left: 5px solid var(--first-color-light);
+  border-right: 5px solid var(--first-color-light);
   background: rgba(0, 0, 0, 0.05);
 }
 
@@ -2447,7 +2516,7 @@ Dimensi-Utama Style
 }
 
 .tm-gold-text {
-  color: #f95b00;
+  color: var(--first-color-dark);
 }
 
 .tm-subtitle {
@@ -2460,7 +2529,7 @@ Dimensi-Utama Style
 
 .tm-btn-x {
   color: white;
-  background-color: #ff9f68;
+  background-color: var(--first-color-light);
   border: none;
   border-radius: 5px;
   display: inline-block;
@@ -2543,7 +2612,7 @@ Pagination
 }
 
 .header-text4:hover {
-  color: red; /* Ubah warna teks menjadi merah saat kursor terlewat */
+  color: var(--first-color); /* Ubah warna teks menjadi merah saat kursor terlewat */
   cursor: pointer; /* Ubah kursor menjadi pointer saat terlewat */
 }
 
@@ -2616,107 +2685,4 @@ tbody th {
   outline: none; /* Menghapus outline saat focus */
   border-color: #007bff; /* Warna garis tepi saat focus */
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* Efek shadow saat focus */
-}
-/*Galery 3d Experience*/
-.gallery-3d{
-  background: #222;
-  font-family: "Fira Sans", sans-serif;
-  padding-right: 2rem;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  overflow: hidden;
-  max-width: 1300px;
-  margin: auto;
-}
-.gallery__strip {
-  min-height: 100vh;
-}
-.gallery__strip__wrapper {
-  flex: 0 0 100%;
-  justify-content: flex-end;
-  background: #222;
-  border-right: 2px solid #333;
-  position: relative;
-}
-
-@media (min-width: 500px) {
-  .gallery__strip__wrapper {
-    flex: 0 0 50%;
-  }
-}
-@media (min-width: 950px) {
-  .gallery {
-    height: 100vh;
-  }
-  .gallery__strip.one {
-    animation: 60s move-it ease alternate infinite 5s;
-    transform: translateY(2%);
-  }
-  .gallery__strip.three {
-    animation: 70s move-it ease alternate infinite 6s;
-    transform: translateY(2%);
-  }
-  .gallery__strip.two {
-    animation: 58s move-it-2 ease alternate infinite 5s;
-    transform: translateY(-50%);
-  }
-  .gallery__strip.four {
-    animation: 65s move-it-2 ease alternate infinite 5.5s;
-    transform: translateY(-50%);
-  }
-  .gallery__strip:hover {
-    animation-play-state: paused;
-  }
-  .gallery__strip__wrapper {
-    flex: 0 0 25%;
-  }
-}
-.photo {
-  position: relative;
-  text-align: right;
-  padding-bottom: 3rem;
-}
-.photo__image img {
-  width: 90%;
-  transform: translateX(30%);
-  transition: 1s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
-}
-.photo__name {
-  text-transform: uppercase;
-  font-size: 30px;
-  letter-spacing: 2px;
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-  margin-top: -25px;
-  transition: 0.4s ease-in-out 0.4s;
-  position: relative;
-  width: 100%;
-}
-.photo:hover .photo__image img {
-  transform: translateX(0%);
-}
-.photo:hover .photo__name {
-  color: #fff;
-}
-
-@keyframes move-it {
-  0%, 90%, 100% {
-    transform: translateY(2%);
-  }
-  45% {
-    transform: translateY(-50%);
-  }
-}
-@keyframes move-it-2 {
-  0%, 90%, 100% {
-    transform: translateY(-50%);
-  }
-  45% {
-    transform: translateY(5%);
-  }
 }

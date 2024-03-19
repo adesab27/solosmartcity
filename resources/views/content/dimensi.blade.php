@@ -39,10 +39,51 @@
         </li>
       </ul>
 
+      <!-- Popular News Start -->
+      <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="single_footer_top wow fadeInRight">
+          <h2>Tranding Post</h2>
+          <ul class="catg3_snav ppost_nav">
+            <li>
+              <div class="media"> 
+                <div class="media-body"> <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a></div>
+              </div>
+           </li>
+            <li>
+              <div class="media"> 
+                <div class="media-body"> <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a></div>
+              </div>
+           </li>
+            <li>
+              <div class="media">
+                <div class="media-body"> <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a></div>
+              </div>
+           </li>
+          </ul>
+        </div>
+      </div>
+    <!-- Popular News End -->
+
+    {{-- Lapor Wali --}}
+    <div class="col-lg-3 col-md-3 col-sm-6">
+      <div class="single_footer_top">
+        <h2>Layanan Lapor MasWali</h2>
+        <ul class="ppost_nav">
+          <li>
+            <img src="{{ asset('assets/images/lapor-wali.jpg') }}">
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    
+
+
+
       <div class="row properties-box">
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-01.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">18 Old Street Miami, OR 97219</a></h4>
@@ -55,7 +96,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-02.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">54 New Street Florida, OR 27001</a></h4>
@@ -68,7 +109,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv rac">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-03.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">26 Mid Street Portland, OR 38540</a></h4>
@@ -81,7 +122,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-04.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">12 Hope Street Portland, OR 12650</a></h4>
@@ -94,7 +135,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-05.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">34 Hope Street Portland, OR 42680</a></h4>
@@ -107,7 +148,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-06.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">22 Hope Street Portland, OR 16540</a></h4>
@@ -120,7 +161,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-03.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">14 Mid Street Miami, OR 36450</a></h4>
@@ -133,7 +174,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-02.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">26 Old Street Miami, OR 12870</a></h4>
@@ -146,7 +187,7 @@
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
           <div class="item">
-            <a href="/dimensidetail"><img src="assets/images/property-01.jpg" alt=""></a>
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">34 New Street Miami, OR 24650</a></h4>
@@ -162,7 +203,7 @@
         <div class="col-lg-12">
           <ul class="pagination">
             <li><a href="#">1</a></li>
-            <li><a class="is_active" href="#">2</a></li>
+            <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">>></a></li>
           </ul>

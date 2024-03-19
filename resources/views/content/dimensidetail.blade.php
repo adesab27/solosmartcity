@@ -22,7 +22,7 @@
       <div class="row">
         <div class="col-lg-8">
           <div class="main-image">
-            <img src="assets/images/single-property.jpg" alt="">
+            <img src="{{ asset('assets/images/pura.jpeg') }}" alt="">
           </div>
           <div class="main-content">
             <span class="category">Apparment</span>
