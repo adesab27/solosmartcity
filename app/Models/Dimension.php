@@ -5,12 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Opd extends Model
+class Dimension extends Model
 {
     use HasFactory;
     
-    protected $fillable = [
-        'namaLink',
-        'link'
-    ];
 }
+$dimensi = Dimension::search('Star Trek')->get();
