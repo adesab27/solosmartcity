@@ -27,6 +27,7 @@
           <div class="main-content">
             <span class="category">Apparment</span>
             <h6 class="tanggal">Surakarta, 05 Maret 2024</h6>
+            <h6 class="author">Gibran Rakabuming Raka</h6>
             <h4>24 New Street Miami, OR 24560</h4>
             <p>Get <strong>the best villa agency</strong> HTML CSS Bootstrap Template for your company website. TemplateMo provides you the <a href="https://www.google.com/search?q=best+free+css+templates" target="_blank">best free CSS templates</a> in the world. Please tell your friends about it. Thank you. Cloud bread kogi bitters pitchfork shoreditch tumblr yr succulents single-origin coffee schlitz enamel pin you probably haven't heard of them ugh hella.
             

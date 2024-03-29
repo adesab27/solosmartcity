@@ -1933,23 +1933,29 @@ Single Page Style
   margin-top: -90px;
 }
 
-.single-property .main-content h4 {
-  font-size: 25px;
-  margin-top: 25px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-
 .single-property .main-content span.category {
-  background-color: #fbd9cf;
+  background-color:#577053;
   font-weight: 500;
   border-radius: 5px;
   font-size: 14px;
-  color: #1e1e1e;
+  color: #fff;
   padding: 5px 12px;
   display: inline-block;
   margin-top: 20px;
+}
+
+.single-property .main-content .author {
+  background-color: #577053;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #fff;
+  padding: 5px 15px;
+  display: block; 
+  margin-top: -27px;
+  clear: both;
+  float: left;
+  /* margin-left: -1px; */
 }
 
 .single-property .main-content h6 {
@@ -1958,6 +1964,16 @@ Single Page Style
   padding: 44px 30px;
   float: right;
   margin-top: -17px;
+  margin-right: -25px;
+  color: #1e1e1e;
+}
+
+.single-property .main-content h4 {
+  font-size: 25px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
 }
 
 .single-property .main-content p {
