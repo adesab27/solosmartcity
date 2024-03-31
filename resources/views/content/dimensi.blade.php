@@ -20,7 +20,10 @@
     <div class="container">
       <ul class="properties-filter smart">
         <li>
-          <a href="#!" data-filter=".gvn" class="is_active">Smart Governance</a>
+          <a href="#!" data-filter=".all" class="is_active">Show All</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".gvn">Smart Governance</a>
         </li>
         <li>
           <a href="#!" data-filter=".brd">Smart Branding</a>
@@ -91,7 +94,7 @@
 
 
       <div class="row properties-box">
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items soc">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items soc all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Society</span>
@@ -104,7 +107,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items gvn">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items gvn all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
@@ -117,7 +120,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items env">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items env all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Environment</span>
@@ -130,7 +133,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items gvn">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items gvn all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
@@ -143,7 +146,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items soc">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items soc all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Society</span>
@@ -156,7 +159,20 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items lvg">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items soc all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Society</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">18 Old Street Miami, OR 97219</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items lvg all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Living</span>
@@ -169,7 +185,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items brd">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items brd all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Branding</span>
@@ -182,7 +198,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items soc">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items soc all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Society</span>
@@ -195,7 +211,20 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items env">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items soc all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Society</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">18 Old Street Miami, OR 97219</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items env all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Environment</span>
@@ -208,7 +237,20 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items gvn">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items brd all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Branding</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">54 New Street Florida, OR 27001</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items gvn all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
@@ -221,7 +263,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items env">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items env all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Environment</span>
@@ -234,7 +276,33 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items lvg">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items soc all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Society</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">18 Old Street Miami, OR 97219</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items brd all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Branding</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">54 New Street Florida, OR 27001</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items lvg all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Living</span>
@@ -247,23 +315,10 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items gvn">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items soc all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
-            <span class="category">Smart Governance</span>
-            <span class="category year">2022</span>
-            <h4><a href="/dimensidetail">12 Hope Street Portland, OR 12650</a></h4>
-            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
-            <div class="main-button">
-              <a href="/dimensidetail">Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items env">
-          <div class="item">
-            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
-            <span class="category">Smart Environment</span>
+            <span class="category">Smart Society</span>
             <span class="category year">2022</span>
             <h4><a href="/dimensidetail">18 Old Street Miami, OR 97219</a></h4>
             <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
@@ -273,20 +328,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items brd">
-          <div class="item">
-            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
-            <span class="category">Smart Governance</span>
-            <span class="category year">2022</span>
-            <h4><a href="/dimensidetail">34 Hope Street Portland, OR 42680</a></h4>
-            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
-            <div class="main-button">
-              <a href="/dimensidetail">Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items ecn">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items ecn all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Economy</span>
@@ -299,7 +341,33 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items env">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items brd all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Branding</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">54 New Street Florida, OR 27001</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items gvn all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Governance</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">12 Hope Street Portland, OR 12650</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items env all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Environment</span>
@@ -312,12 +380,12 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items gvn">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items brd all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
             <span class="category year">2022</span>
-            <h4><a href="/dimensidetail">14 Mid Street Miami, OR 36450</a></h4>
+            <h4><a href="/dimensidetail">34 Hope Street Portland, OR 42680</a></h4>
             <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
             <div class="main-button">
@@ -325,7 +393,33 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items lvg">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items brd all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Branding</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">54 New Street Florida, OR 27001</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items ecn all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Economy</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">22 Hope Street Portland, OR 16540</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items lvg all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Living</span>
@@ -338,12 +432,12 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items brd">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items ecn all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
-            <span class="category">Smart Governance</span>
+            <span class="category">Smart Economy</span>
             <span class="category year">2022</span>
-            <h4><a href="/dimensidetail">26 Old Street Miami, OR 12870</a></h4>
+            <h4><a href="/dimensidetail">22 Hope Street Portland, OR 16540</a></h4>
             <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
             <div class="main-button">
@@ -351,7 +445,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items env">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items env all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Environment</span>
@@ -364,7 +458,111 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center  properties-items gvn">
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items lvg all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Living</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">18 Old Street Miami, OR 97219</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items gvn all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Governance</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">14 Mid Street Miami, OR 36450</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items lvg all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Living</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">18 Old Street Miami, OR 97219</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items lvg all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Living</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">18 Old Street Miami, OR 97219</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items ecn all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Economy</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">22 Hope Street Portland, OR 16540</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items brd all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Governance</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">26 Old Street Miami, OR 12870</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items ecn all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Economy</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">22 Hope Street Portland, OR 16540</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items env all">
+          <div class="item">
+            <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
+            <span class="category">Smart Environment</span>
+            <span class="category year">2022</span>
+            <h4><a href="/dimensidetail">18 Old Street Miami, OR 97219</a></h4>
+            <h6><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</a></h6><br>
+            <div class="main-button">
+              <a href="/dimensidetail">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center  properties-items gvn all">
           <div class="item">
             <a href="/dimensidetail"><img src="{{asset("assets/images/pura.jpeg")}}" alt=""></a>
             <span class="category">Smart Governance</span>
