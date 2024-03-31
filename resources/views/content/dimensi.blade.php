@@ -20,10 +20,10 @@
     <div class="container">
       <ul class="properties-filter smart">
         <li>
-          <a href="#!" data-filter=".adv">Smart Governance</a>
+          <a href="#!" data-filter=".adv" class="is_active">Smart Governance</a>
         </li>
         <li>
-          <a href="#!" data-filter=".rac">Smart Branding</a>
+          <a href="#!" data-filter=".rac" >Smart Branding</a>
         </li>
         <li>
           <a href="#!" data-filter=".str">Smart Economy</a>
