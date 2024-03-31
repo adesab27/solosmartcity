@@ -1738,30 +1738,30 @@ Footer Style
 	margin-bottom: 20px;
 } */
 
-.footer-distributed .footer-icons{
+.footer-distributed .footer-right .footer-icons{
 	margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a i{
+.footer-distributed .footer-right .footer-icons a i{
 	display: inline-block;
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color:  #ffffff;
 	border-radius: 2px;
 	font-size: 20px;
-	color: #ffffff;
+	color: #33383b;
 	text-align: center;
 	line-height: 35px;
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
 
-.footer-distributed .footer-right i.bi-instagram,
-.footer-distributed .footer-right i.bi-youtube,
-.footer-distributed .footer-right i.bi-tiktok {
-    background-color: #33383b; /* Atur warna latar belakang ikon jika dibutuhkan */
-    color: #ffffff; /* Warna ikon diatur menjadi putih */
+.footer-distributed .footer-right .footer-icons a i.bi-instagram,
+.footer-distributed .footer-right .footer-icons a i.bi-youtube,
+.footer-distributed .footer-right .footer-icons a i.bi-tiktok {
+    /* background-color: #33383b;  */
+    color: #ffffff;
     font-size: 17px;
     line-height: 38px;
 }
