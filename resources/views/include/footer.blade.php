@@ -5,6 +5,10 @@
       <h3>Solo<span> Smartcity</span></h3>
 
       <p class="footer-company-name">	&copy; Solo SmartCity</p>
+
+      <p class="footer-company-name">
+        Smart city atau kota cerdas adalah kota yang mengintegrasikan teknologi informasi dan komunikasi dalam tata kelola sehari-hari. Tujuannya adalah untuk meningkatkan efisiensi, memperbaiki pelayanan publik, dan meningkatkan kesejahteraan warga.
+      </p>
     </div>
 
     <div class="footer-center">
@@ -35,9 +39,9 @@
 
       <div class="footer-icons">
 
-        <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><i class="fa fa-youtube"></i></a>
-        <a href="#"><i class="fa fa-email"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i></a>
       </div>
 
     </div>
