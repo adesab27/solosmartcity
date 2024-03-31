@@ -211,7 +211,7 @@
       </div>
       
   <!-- slider -->
-  <div class="card__container swiper">
+  {{-- <div class="card__container swiper">
     <div class="card__content">
       <div class="swiper-wrapper">
         <article class="card__article swiper-slide">
@@ -324,6 +324,64 @@
 
     <!-- Pagination -->
     <div class="swiper-pagination"></div>
+  </div> --}}
+
+  <div class="container">
+    <div class="card-container" id="main-swiper">
+      <div class="card-items" id="items">
+        <div class="card-item" id="item">
+          <img class="card-item-img" src="{{asset("assets/images/logo-ska.jpg")}}" alt="category" />
+          <div class="card-item-circle"></div>
+          <p class="card-item-text">Web Surakarta</p>
+        </div>
+        <div class="card-item" id="item">
+          <img class="card-item-img" src="{{asset("assets/images/logo-ska.jpg")}}" alt="category" />
+          <div class="card-item-circle"></div>
+          <p class="card-item-text">Web Surakarta</p>
+        </div>
+        <div class="card-item" id="item">
+          <img class="card-item-img" src="{{asset("assets/images/logo-ska.jpg")}}" alt="category" />
+          <div class="card-item-circle"></div>
+          <p class="card-item-text">Web Surakarta</p>
+        </div>
+        <div class="card-item" id="item">
+          <img class="card-item-img" src="{{asset("assets/images/logo-ska.jpg")}}" alt="category" />
+          <div class="card-item-circle"></div>
+          <p class="card-item-text">Web Surakarta</p>
+        </div>
+        <div class="card-item" id="item">
+          <img class="card-item-img" src="{{asset("assets/images/logo-ska.jpg")}}" alt="category" />
+          <div class="card-item-circle"></div>
+          <p class="card-item-text">Web Surakarta</p>
+        </div>
+        <div class="card-item" id="item">
+          <img class="card-item-img" src="{{asset("assets/images/logo-ska.jpg")}}"alt="category" />
+          <div class="card-item-circle"></div>
+          <p class="card-item-text">Web Surakarta</p>
+        </div>
+        <div class="card-item" id="item">
+          <img class="card-item-img" src="{{asset("assets/images/logo-ska.jpg")}}"alt="category" />
+          <div class="card-item-circle"></div>
+          <p class="card-item-text">Web Surakarta</p>
+        </div>
+        <div class="card-item" id="item">
+          <img class="card-item-img" src="{{asset("assets/images/logo-ska.jpg")}}"alt="category" />
+          <div class="card-item-circle"></div>
+          <p class="card-item-text">Web Surakarta</p>
+        </div>
+        <div class="card-item" id="item">
+          <img class="card-item-img" src="{{asset("assets/images/logo-ska.jpg")}}"alt="category" />
+          <div class="card-item-circle"></div>
+          <p class="card-item-text">Web Surakarta</p>
+        </div>
+      </div>
+      <div class="btn next" id="next">
+        <button>Next</button>
+      </div>
+      <div class="btn prev" id="prev">
+        <button>Previus</button>
+      </div>
+    </div>
   </div>
 
 @endsection
