@@ -20,17 +20,10 @@
     <div class="container">
       <ul class="properties-filter smart">
         <li>
-<<<<<<< HEAD
           <a href="#!" data-filter=".gvn" class="is_active">Smart Governance</a>
         </li>
         <li>
           <a href="#!" data-filter=".brd">Smart Branding</a>
-=======
-          <a href="#!" data-filter=".adv" class="is_active">Smart Governance</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".rac" >Smart Branding</a>
->>>>>>> 6f9a861371ca8bdf605e876dacabbd6d3e69ec06
         </li>
         <li>
           <a href="#!" data-filter=".ecn">Smart Economy</a>
