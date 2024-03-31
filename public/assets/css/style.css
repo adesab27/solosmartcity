@@ -1722,42 +1722,51 @@ Footer Style
 	width: 20%;
 }
 
-.footer-distributed .footer-company-about{
+/* .footer-distributed .footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
-}
+} */
 
-.footer-distributed .footer-company-about span{
+/* .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 20px;
-}
+} */
 
 .footer-distributed .footer-icons{
 	margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a{
+.footer-distributed .footer-icons a i{
 	display: inline-block;
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
 	background-color:  #33383b;
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
-
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+
+.footer-distributed .footer-right i.bi-instagram,
+.footer-distributed .footer-right i.bi-youtube,
+.footer-distributed .footer-right i.bi-tiktok {
+    background-color: #33383b; /* Atur warna latar belakang ikon jika dibutuhkan */
+    color: #ffffff; /* Warna ikon diatur menjadi putih */
+    font-size: 17px;
+    line-height: 38px;
+}
+
+
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
