@@ -1223,18 +1223,18 @@ Video Style
 /* Slider */
 
 .card__container {
-  padding-block: 5rem;
+  padding-block: 2rem;
 }
 
 .card__content {
-  margin-inline: 1.75rem;
-  border-radius: 1.25rem;
+  margin-inline: 1rem;
+  border-radius: 1rem;
   overflow: hidden;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .card__article {
-  width: 150px; /* Remove after adding swiper js */
+  width: 120px; /* Remove after adding swiper js */
   border-radius: 1.75rem;
   overflow: hidden;
 }
