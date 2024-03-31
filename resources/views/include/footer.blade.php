@@ -32,8 +32,8 @@
 
     <div class="footer-right">
       <div class="footer-icons">
-        <a href="#"><i class="bi bi-instagram"></i></a>
         <a href="#"><i class="bi bi-youtube"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
         <a href="#"><i class="bi bi-tiktok"></i></a>
       </div>
       <!-- <p class="footer-company-about">
