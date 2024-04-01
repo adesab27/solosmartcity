@@ -1756,9 +1756,7 @@ Footer Style
 	width: 35%;
 }
 
-.footer-distributed .footer-center i{
-	background-color:  #33383b;
-	color: #ffffff;
+.footer-distributed .footer-center img{
 	font-size: 25px;
 	width: 38px;
 	height: 38px;
@@ -1769,7 +1767,7 @@ Footer Style
 	vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
+.footer-distributed .footer-center img{
 	font-size: 17px;
 	line-height: 38px;
   color: #fff;
@@ -1821,28 +1819,15 @@ Footer Style
 	margin-top: 25px;
 }
 
-.footer-distributed .footer-right .footer-icons a i{
+.footer-distributed .footer-right .footer-icons a img{
 	display: inline-block;
-	width: 35px;
-	height: 35px;
+	width: 32px;
+	height: 32px;
 	cursor: pointer;
-	background-color:  #ffffff;
-	border-radius: 2px;
-	font-size: 20px;
-	color: #33383b;
 	text-align: center;
-	line-height: 35px;
-	margin-right: 3px;
-	margin-bottom: 5px;
-}
-
-.footer-distributed .footer-right .footer-icons a i.bi-instagram,
-.footer-distributed .footer-right .footer-icons a i.bi-youtube,
-.footer-distributed .footer-right .footer-icons a i.bi-tiktok {
-    /* background-color: #33383b;  */
-    color: #000;
-    font-size: 17px;
-    line-height: 38px;
+	margin-right: 15px;
+  margin-top: -30px;
+  border-radius: 30px;
 }
 
 
