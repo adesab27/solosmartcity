@@ -26,6 +26,12 @@ Route::put('/update/{id}', [App\Http\Controllers\dimensiController::class, 'upda
 Route::delete('/delete/{id}', [App\Http\Controllers\dimensiController::class, 'delete']) ->name('dimensi.delete');
 
 Route::get('/soloevent', [App\Http\Controllers\soloeventController::class, 'index']);
+Route::get('/galerise', [App\Http\Controllers\dimensiController::class, 'galerise']) ->name('galerise');
+Route::get('/create', [App\Http\Controllers\dimensiController::class, 'create']) ->name('galeri.create');
+Route::post('/store', [App\Http\Controllers\dimensiController::class, 'store']) ->name('galeri.store');
+Route::get('/edit/{id}', [App\Http\Controllers\dimensiController::class, 'edit']) ->name('galeri.edit');
+Route::put('/update/{id}', [App\Http\Controllers\dimensiController::class, 'update']) ->name('galeri.update');
+Route::delete('/delete/{id}', [App\Http\Controllers\dimensiController::class, 'delete']) ->name('galeri.delete');
 
 Route::get('/experience', [App\Http\Controllers\experienceController::class, 'index']);
 
