@@ -26,15 +26,25 @@ Route::put('/update/{id}', [App\Http\Controllers\dimensiController::class, 'upda
 Route::delete('/delete/{id}', [App\Http\Controllers\dimensiController::class, 'delete']) ->name('dimensi.delete');
 
 Route::get('/soloevent', [App\Http\Controllers\soloeventController::class, 'index']);
-Route::get('/galerise', [App\Http\Controllers\dimensiController::class, 'galerise']) ->name('galerise');
-Route::get('/create', [App\Http\Controllers\dimensiController::class, 'create']) ->name('galeri.create');
-Route::post('/store', [App\Http\Controllers\dimensiController::class, 'store']) ->name('galeri.store');
-Route::get('/edit/{id}', [App\Http\Controllers\dimensiController::class, 'edit']) ->name('galeri.edit');
-Route::put('/update/{id}', [App\Http\Controllers\dimensiController::class, 'update']) ->name('galeri.update');
-Route::delete('/delete/{id}', [App\Http\Controllers\dimensiController::class, 'delete']) ->name('galeri.delete');
 
 Route::get('/experience', [App\Http\Controllers\experienceController::class, 'index']);
 
 Route::get('/dimensiutama', [App\Http\Controllers\dimensiutamaController::class, 'index']);
 
 Route::get('/dimensidetail', [App\Http\Controllers\dimensidetailController::class, 'index']);
+
+
+// admin
+Route::get('/admin/soloevent', [App\Http\Controllers\AdminSoloEventController::class, 'index'])->name('indexSoloEvent');
+Route::get('/admin/soloevent/add', [App\Http\Controllers\AdminSoloEventController::class, 'add'])->name('addViewSoloEvent');
+Route::post('/admin/soloevent/add', [App\Http\Controllers\AdminSoloEventController::class, 'create'])->name('addSoloEvent');
+Route::get('/admin/soloevent/edit/{id}', [App\Http\Controllers\AdminSoloEventController::class, 'edit'])->name('editSoloEvent');
+Route::post('/admin/soloevent/update', [App\Http\Controllers\AdminSoloEventController::class, 'update'])->name('updateSoloEvent');
+Route::get('/admin/soloevent/delete/{id}', [App\Http\Controllers\AdminSoloEventController::class, 'delete'])->name('deleteSoloEvent');
+
+Route::get('/admin/opdlink', [App\Http\Controllers\AdminOpdController::class, 'index'])->name('indexOpdLink');
+Route::get('/admin/opdlink/add', [App\Http\Controllers\AdminOpdController::class, 'add'])->name('addViewOpdLink');
+Route::post('/admin/opdlink/add', [App\Http\Controllers\AdminOpdController::class, 'create'])->name('addOpdLink');
+Route::get('/admin/opdlink/edit/{id}', [App\Http\Controllers\AdminOpdController::class, 'edit'])->name('editOpdLink');
+Route::post('/admin/opdlink/update', [App\Http\Controllers\AdminOpdController::class, 'update'])->name('updateOpdLink');
+Route::get('/admin/opdlink/delete/{id}', [App\Http\Controllers\AdminOpdController::class, 'delete'])->name('deleteOpdLink');
