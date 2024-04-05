@@ -14,7 +14,7 @@
                 <img src="{{ asset("bower_components/admin-lte/dist/img/user2-160x160.jpg")}}" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Alexander Pierce</a>
+                <a href="#" class="d-block">Solo Smart City</a>
             </div>
         </div>
 
@@ -36,7 +36,7 @@
                 <!-- Add icons to the links using the .nav-icon class
             with font-awesome or any other icon font library -->
                 <li class="nav-item">
-                    <a href="" class="nav-link">
+                    <a href="{{route('indexSoloEvent')}}" class="nav-link">
                         <i class="nav-icon far fa-copy"></i>
                         <p>
                             Solo Event
@@ -44,7 +44,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">
+                    <a href="{{route('indexOpdLink')}}" class="nav-link">
                         <i class="nav-icon far fa-copy"></i>
                         <p>
                             OPD Link
