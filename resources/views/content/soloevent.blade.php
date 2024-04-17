@@ -20,15 +20,16 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="owl-features owl-carousel" style="position: relative; z-index: 5;">
+            @foreach ($dataatas as $d)
             <div class="item">
               <div class="thumb">
-                <img src="assets/images/lampion.jpg" alt="">
+                <img src="{{asset("data_file/$d->image_url")}}" style="width: 300px; height: 337px; object-fit: fill;" alt="">
                 <div class="hover-effect">
                   <div class="content">
-                    <h4>Lampion Pasar Gede</h4>
+                    <h4>{{$d->title}}</h4>
                     <ul>
-                      <li><span>Periode:</span> 28 Januari - 10 Februari 2024</li>
-                      <li><span>Lokasi:</span> Kawasan Pasar Gede</li>
+                      <li><span>Periode:</span> {{$d->start_periode}} - {{$d->end_periode}}</li>
+                      <li><span>Lokasi:</span> {{$d->location}}</li>
                       <!-- <li><span>Awards:</span> $1.000 + Camera Nikon</li> -->
                       <button>Selengkapnya</button>
                     </ul>
@@ -36,134 +37,7 @@
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/lampion.jpg" alt="">
-                <div class="hover-effect">
-                    <div class="content">
-                        <h4>Lampion Pasar Gede</h4>
-                        <ul>
-                          <li><span>Periode:</span> 28 Januari - 10 Februari 2024</li>
-                          <li><span>Lokasi:</span> Kawasan Pasar Gede</li>
-                          <!-- <li><span>Awards:</span> $1.000 + Camera Nikon</li> -->
-                          <button>Selengkapnya</button>
-                        </ul>
-                      </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/lampion.jpg" alt="">
-                <div class="hover-effect">
-                    <div class="content">
-                        <h4>Lampion Pasar Gede</h4>
-                        <ul>
-                          <li><span>Periode:</span> 28 Januari - 10 Februari 2024</li>
-                          <li><span>Lokasi:</span> Kawasan Pasar Gede</li>
-                          <!-- <li><span>Awards:</span> $1.000 + Camera Nikon</li> -->
-                          <button>Selengkapnya</button>
-                        </ul>
-                      </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/lampion.jpg" alt="">
-                <div class="hover-effect">
-                    <div class="content">
-                        <h4>Lampion Pasar Gede</h4>
-                        <ul>
-                          <li><span>Periode:</span> 28 Januari - 10 Februari 2024</li>
-                          <li><span>Lokasi:</span> Kawasan Pasar Gede</li>
-                          <!-- <li><span>Awards:</span> $1.000 + Camera Nikon</li> -->
-                          <button>Selengkapnya</button>
-                        </ul>
-                      </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/lampion.jpg" alt="">
-                <div class="hover-effect">
-                    <div class="content">
-                        <h4>Lampion Pasar Gede</h4>
-                        <ul>
-                          <li><span>Periode:</span> 28 Januari - 10 Februari 2024</li>
-                          <li><span>Lokasi:</span> Kawasan Pasar Gede</li>
-                          <!-- <li><span>Awards:</span> $1.000 + Camera Nikon</li> -->
-                          <button>Selengkapnya</button>
-                        </ul>
-                      </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/lampion.jpg" alt="">
-                <div class="hover-effect">
-                    <div class="content">
-                        <h4>Lampion Pasar Gede</h4>
-                        <ul>
-                          <li><span>Periode:</span> 28 Januari - 10 Februari 2024</li>
-                          <li><span>Lokasi:</span> Kawasan Pasar Gede</li>
-                          <!-- <li><span>Awards:</span> $1.000 + Camera Nikon</li> -->
-                          <button>Selengkapnya</button>
-                        </ul>
-                      </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/lampion.jpg" alt="">
-                <div class="hover-effect">
-                    <div class="content">
-                        <h4>Lampion Pasar Gede</h4>
-                        <ul>
-                          <li><span>Periode:</span> 28 Januari - 10 Februari 2024</li>
-                          <li><span>Lokasi:</span> Kawasan Pasar Gede</li>
-                          <!-- <li><span>Awards:</span> $1.000 + Camera Nikon</li> -->
-                          <button>Selengkapnya</button>
-                        </ul>
-                      </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/lampion.jpg" alt="">
-                <div class="hover-effect">
-                    <div class="content">
-                        <h4>Lampion Pasar Gede</h4>
-                        <ul>
-                          <li><span>Periode:</span> 28 Januari - 10 Februari 2024</li>
-                          <li><span>Lokasi:</span> Kawasan Pasar Gede</li>
-                          <!-- <li><span>Awards:</span> $1.000 + Camera Nikon</li> -->
-                          <button>Selengkapnya</button>
-                        </ul>
-                      </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="thumb">
-                <img src="assets/images/lampion.jpg" alt="">
-                <div class="hover-effect">
-                    <div class="content">
-                        <h4>Lampion Pasar Gede</h4>
-                        <ul>
-                          <li><span>Periode:</span> 28 Januari - 10 Februari 2024</li>
-                          <li><span>Lokasi:</span> Kawasan Pasar Gede</li>
-                          <!-- <li><span>Awards:</span> $1.000 + Camera Nikon</li> -->
-                          <button>Selengkapnya</button>
-                        </ul>
-                      </div>
-                </div>
-              </div>
-            </div>
+            @endforeach
           </div>
         </div>
       </div>
@@ -178,66 +52,23 @@
                 <h4>Kegiatan yang sudah terselenggara</em></h4>
               </div>
             </div>
+            @foreach ($datatengah as $p)
             <div class="col-lg-3 col-sm-6">
               <div class="popular-item">
                 <div class="top-content">
                   <div class="right">
-                    <h4>Pertunjukkan Wayang Sriwedari</h4>
+                    <h4>{{ $p->title }}</h4>
                   </div>
                 </div>
                 <div class="thumb">
-                  <img src="{{asset("assets/images/imgse/galeri-15.jpg")}}" alt="">
+                  <img src="{{asset("data_file/$p->image_url")}}" alt="">
                 </div>
                 <div class="border-button">
-                  <h5>Some details about events here</h5>
+                  <h5>{{$p->description}}</h5>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="popular-item">
-                <div class="top-content">
-                  <div class="right">
-                    <h4>Sendratari Candra Purnama</h4>
-                  </div>
-                </div>
-                <div class="thumb">
-                  <img src="{{asset("assets/images/imgse/galeri-18.jpg")}}" alt="">
-                </div>
-                <div class="border-button">
-                    <h5>Some details about events here</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="popular-item">
-                <div class="top-content">
-                  <div class="right">
-                    <h4>Atraksi Prajurit Keraton</h4>
-                  </div>
-                </div>
-                <div class="thumb">
-                  <img src="{{asset("assets/images/imgse/galeri-1.jpg")}}" alt="">
-                </div>
-                <div class="border-button">
-                    <h5>Some details about events here</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <div class="popular-item">
-                <div class="top-content">
-                  <div class="right">
-                    <h4>Ngarsopuro Night Market</h4>
-                  </div>
-                </div>
-                <div class="thumb">
-                  <img src="{{asset("assets/images/imgse/galeri-16.jpg")}}" alt="">
-                </div>
-                <div class="border-button">
-                    <h5>Some details about events here</h5>
-                </div>
-              </div>
-            </div>
+            @endforeach
           </div>
         </div>
       </section>
