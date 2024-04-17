@@ -13,11 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('link_opd', function (Blueprint $table) {
+        Schema::create('produks', function (Blueprint $table) {
             $table->id();
-            $table->string('namaLink');
-            $table->string('Logo');
-            $table->string('Link');
+            $table->string('Nama');
+            $table->string('link');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('link_opd');
+        Schema::dropIfExists('produks');
     }
 };

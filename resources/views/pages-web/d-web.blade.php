@@ -6,12 +6,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Dashboard</h1>
+                        <h1 class="m-0">Dashboard Form </h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard Artikel</li>
+                            <li class="breadcrumb-item active">Dashboard Website</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -24,23 +24,12 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <a href="{{ route('dimensi.create') }}" class="btn btn-primary mb-2"> Tambah Data</a>
+                        <a href="{{ route('create-link') }}" class="btn btn-primary mb-2"> Tambah Data</a>
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title">Responsive Hover Table</h3>
+                                <h3 class="card-title">Table Form Keputusan Wali</h3>
 
-                                <div class="card-tools">
-                                    <div class="input-group input-group-sm" style="width: 150px;">
-                                        <input type="text" name="table_search" class="form-control float-right"
-                                            placeholder="Search">
-
-                                        <div class="input-group-append">
-                                            <button type="submit" class="btn btn-default">
-                                                <i class="fas fa-search"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body table-responsive p-0">
@@ -48,27 +37,22 @@
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Judul</th>
-                                            <th>Deskripsi</th>
-                                            <th>Dimensi</th>
-                                            <th>Photo</th>
-                                            <th>Action</th>
+                                            <th>Nama</th>
+                                            <th>Website link</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach ($data as $d)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td>{{ $d->judul }}</td>
-                                                <td>{{ $d->desc }}</td>
-                                                <td>{{ $d->subdimensi }}</td>
-                                                <td><img src="{{ asset('storage/photo-dimensi/'.$d->image) }}" alt="" width="120"></td>
+                                                <td>{{ $d->Nama }}</td>
+                                                <td>{{ $d->Website }}</td>
                                                 <td>
-                                                    <a href="{{ route('dimensi.edit', ['id' => $d->id]) }}"
-                                                        class="btn btn-primary"><i class="fas fa-pen"></i>Edit</a>
+                                                    <a href="{{ route('edit-link', ['id' => $d->id]) }}"
+                                                        class="btn btn-primary"><i class="fas fa-pen"></i> Edit</a>
                                                     <a data-toggle="modal" data-target="#modal-hapus{{ $d->id }}"
                                                         href="" class="btn btn-danger"><i
-                                                            class="fas fa-trash-alt"></i>Hapus</a>
+                                                            class="fas fa-trash-alt"></i> Hapus</a>
                                                 </td>
                                             </tr>
                                             <div class="modal fade" id="modal-hapus{{ $d->id }}">
@@ -83,10 +67,10 @@
                                                         </div>
                                                         <div class="modal-body">
                                                             <p>Apakah Kamu yakin ingin menghapus data ini
-                                                                <b>{{ $d->judul }}</b></p>
+                                                                <b>{{ $d->Nama }}</b></p>
                                                         </div>
                                                         <div class="modal-footer justify-content-between">
-                                                            <form action="{{ route('dimensi.delete', ['id' => $d->id]) }}" method="POST">
+                                                            <form action="{{ route('delete-link', ['id' => $d->id]) }}" method="POST">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button type="submit" class="btn btn-primary">Ya, Hapus</button>

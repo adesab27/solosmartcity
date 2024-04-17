@@ -1,17 +1,53 @@
-@extends('layout.main')
-@section('content')
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdminLTE 3 | Dashboard</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{ asset("/bower_components/admin-lte/plugins/fontawesome-free/css/all.min.css")}}">
+    <!-- Ionicons -->
+    <link rel=" stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="{{ asset("/bower_components/admin-lte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css")}}">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="{{ asset("/bower_components/admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css")}}">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="{{ asset("/bower_components/admin-lte/plugins/jqvmap/jqvmap.min.css")}}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{ asset("/bower_components/admin-lte/dist/css/adminlte.min.css")}}">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="{{ asset("/bower_components/admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css")}}">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="{{ asset("/bower_components/admin-lte/plugins/daterangepicker/daterangepicker.css")}}">
+    <!-- summernote -->
+    <link rel="stylesheet" href="{{ asset("/bower_components/admin-lte/plugins/summernote/summernote-bs4.min.css")}}">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        @include("admin.header")
+        <!-- /.navbar -->
+
+        @include("admin.sidebar")
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <div class="content-header">
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Dashboard</h1>
+                        <h1 class="m-0">Dashboard Form </h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard Artikel</li>
+                            <li class="breadcrumb-item active">Dashboard Website</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -24,23 +60,12 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <a href="{{ route('dimensi.create') }}" class="btn btn-primary mb-2"> Tambah Data</a>
+                        <a href="{{ route('create-link') }}" class="btn btn-primary mb-2"> Tambah Data</a>
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title">Responsive Hover Table</h3>
+                                <h3 class="card-title">Table Form Keputusan Wali</h3>
 
-                                <div class="card-tools">
-                                    <div class="input-group input-group-sm" style="width: 150px;">
-                                        <input type="text" name="table_search" class="form-control float-right"
-                                            placeholder="Search">
-
-                                        <div class="input-group-append">
-                                            <button type="submit" class="btn btn-default">
-                                                <i class="fas fa-search"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body table-responsive p-0">
@@ -48,27 +73,22 @@
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Judul</th>
-                                            <th>Deskripsi</th>
-                                            <th>Dimensi</th>
-                                            <th>Photo</th>
-                                            <th>Action</th>
+                                            <th>Nama</th>
+                                            <th>Website link</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach ($data as $d)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td>{{ $d->judul }}</td>
-                                                <td>{{ $d->desc }}</td>
-                                                <td>{{ $d->subdimensi }}</td>
-                                                <td><img src="{{ asset('storage/photo-dimensi/'.$d->image) }}" alt="" width="120"></td>
+                                                <td>{{ $d->Nama }}</td>
+                                                <td>{{ $d->Website }}</td>
                                                 <td>
-                                                    <a href="{{ route('dimensi.edit', ['id' => $d->id]) }}"
-                                                        class="btn btn-primary"><i class="fas fa-pen"></i>Edit</a>
+                                                    <a href="{{ route('edit-link', ['id' => $d->id]) }}"
+                                                        class="btn btn-primary"><i class="fas fa-pen"></i> Edit</a>
                                                     <a data-toggle="modal" data-target="#modal-hapus{{ $d->id }}"
                                                         href="" class="btn btn-danger"><i
-                                                            class="fas fa-trash-alt"></i>Hapus</a>
+                                                            class="fas fa-trash-alt"></i> Hapus</a>
                                                 </td>
                                             </tr>
                                             <div class="modal fade" id="modal-hapus{{ $d->id }}">
@@ -83,10 +103,10 @@
                                                         </div>
                                                         <div class="modal-body">
                                                             <p>Apakah Kamu yakin ingin menghapus data ini
-                                                                <b>{{ $d->judul }}</b></p>
+                                                                <b>{{ $d->Nama }}</b></p>
                                                         </div>
                                                         <div class="modal-footer justify-content-between">
-                                                            <form action="{{ route('dimensi.delete', ['id' => $d->id]) }}" method="POST">
+                                                            <form action="{{ route('delete-link', ['id' => $d->id]) }}" method="POST">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <button type="submit" class="btn btn-primary">Ya, Hapus</button>
@@ -112,4 +132,36 @@
         </section>
         <!-- /.content -->
     </div>
-@endsection
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+        All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Version</b> 3.2.0
+        </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+<!-- JQUERY -->
+<script src="{{ asset("/bower_components/admin-lte/plugins/jquery/jquery.min.js")}}"></script>
+<!-- Bootstrap 4 -->
+<script src="{{ asset("/bower_components/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
+<!-- bs-custom-file-input -->
+<script src="{{ asset("/bower_components/admin-lte/plugins/bs-custom-file-input/bs-custom-file-input.min.js")}}"></script>
+<!-- AdminLTE App -->
+<script src="{{ asset("/bower_components/admin-lte/dist/js/adminlte.min.js")}}"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="{{ asset("/bower_components/admin-lte/dist/js/demo.js")}}"></script>
+<script>
+    $(function() {
+        bsCustomFileInput.init();
+    });
+</script>
+</body>
+
+</html>

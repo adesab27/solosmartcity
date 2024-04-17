@@ -1275,7 +1275,7 @@ Video Style
 
 .card-item {
   margin: 24px;
-  height: 155px;
+  height: 215px;
   display: grid;
   max-width: 150px;
   transition: 0.2s;
@@ -1300,7 +1300,7 @@ Video Style
 
 .card-item-img {
   padding: 0;
-  height: 100px;
+  height: flex;
   margin-top: -8px;
   position: absolute;
   justify-self: center;
@@ -1308,7 +1308,7 @@ Video Style
 }
 
 .card-item-text {
-  margin: 0;
+  margin: 10px;
   text-align: center;
 }
 
@@ -1531,12 +1531,17 @@ Video Style
   text-align: justify;
   padding-right: 3.8cm;
 }
+.budaya-text-2{
+  text-align: justify;
+}
 .des-budaya h2{
+  padding-left: 50px;
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 450;
   color: white;
 }
 .des-budaya p{
+  padding-left: 50px;
   color:  var(--first-color-dark);
 }
 
@@ -1554,6 +1559,26 @@ Video Style
   flex: 1;
   margin: 0 10px; /* Mengatur jarak antara foto */
 }
+.kota-budaya-2{
+  background-color: var(--first-color-light);
+  background-image: url(../images/fix-bg.png);
+  margin-top: 150px;
+  position: relative;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.kota-budaya-2 .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dua kolom */
+
+}
+.kota-budaya-2 .container-foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* 
 ---------------------------------------------
 Trending

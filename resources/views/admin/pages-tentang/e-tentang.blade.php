@@ -22,7 +22,7 @@
         <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
-                <form action="{{ route('dimensi.update',['id'=> $data->id]) }}" method="POST">
+                <form action="{{ route('update-tentang',['id'=> $data->id]) }}" method="POST">
                     @csrf
                     @method('PUT')
                     <div class="row">
@@ -38,41 +38,21 @@
                                 <form>
                                     <div class="card-body">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Judul</label>
-                                            <input type="text" name = 'judul' class="form-control" id="example" value="{{ $data->judul }}"
-                                                placeholder="Masukkan Judul">
-                                            @error('judul')
-                                                <small>{{ $message }}</small>
-                                            @enderror
+                                            <label for="exampleInputEmail1">Nama</label>
+                                            <input type="text" name = 'Nama' class="form-control" id="example" value="{{ $data->Nama }}"
+                                                placeholder="Masukkan Nama File">
                                         </div>
+                                        
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Description</label>
-                                            <input type="text" name = 'desc' class="form-control" id="example" value="{{ $data->desc }}"
-                                                placeholder="Masukkan Deskripsi">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Sub Dimensi</label>
-                                            <input type="text" name = 'subdimensi' class="form-control" id="example" value="{{ $data->subdimensi }}"
-                                                placeholder="Masukkan sub smart dimensi">
-                                            @error('judul')
-                                                <small>{{ $message }}</small>
-                                            @enderror
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Photo</label>
-                                                <input type="file" name = 'photo' class="form-control"
+                                            <label for="exampleInputEmail1">File PDF</label>
+                                                <input type="file" name = 'link' class="form-control" value="{{ $data->link}}"
                                                     id="exampleInputFile1">
-                                            @error('photo')
-                                                <small>{{ $message }}</small>
-                                            @enderror
                                         </div>
                                         <div class="form-check">
                                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                         </div>
                                     </div>
-                                    <!-- /.card-body -->
-
                                     <div class="card-footer">
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
@@ -92,4 +72,36 @@
         <!-- /.content -->
 
     </div>
-@endsection
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+        All rights reserved.
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Version</b> 3.2.0
+        </div>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+<!-- JQUERY -->
+<script src="{{ asset("/bower_components/admin-lte/plugins/jquery/jquery.min.js")}}"></script>
+<!-- Bootstrap 4 -->
+<script src="{{ asset("/bower_components/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
+<!-- bs-custom-file-input -->
+<script src="{{ asset("/bower_components/admin-lte/plugins/bs-custom-file-input/bs-custom-file-input.min.js")}}"></script>
+<!-- AdminLTE App -->
+<script src="{{ asset("/bower_components/admin-lte/dist/js/adminlte.min.js")}}"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="{{ asset("/bower_components/admin-lte/dist/js/demo.js")}}"></script>
+<script>
+    $(function() {
+        bsCustomFileInput.init();
+    });
+</script>
+</body>
+
+</html>

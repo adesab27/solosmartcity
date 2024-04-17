@@ -22,7 +22,7 @@
         <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
-                <form action="{{ route('dimensi.update',['id'=> $data->id]) }}" method="POST">
+                <form action="{{ route('update-link',['id'=> $data->id]) }}" method="POST">
                     @csrf
                     @method('PUT')
                     <div class="row">
@@ -38,41 +38,22 @@
                                 <form>
                                     <div class="card-body">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Judul</label>
-                                            <input type="text" name = 'judul' class="form-control" id="example" value="{{ $data->judul }}"
-                                                placeholder="Masukkan Judul">
-                                            @error('judul')
+                                            <label for="exampleInputEmail1">Nama</label>
+                                            <input type="text" name = 'Nama' class="form-control" id="example" value="{{ $data->Nama }}"
+                                                placeholder="Masukkan Nama Website">
+                                            @error('nama')
                                                 <small>{{ $message }}</small>
                                             @enderror
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Description</label>
-                                            <input type="text" name = 'desc' class="form-control" id="example" value="{{ $data->desc }}"
-                                                placeholder="Masukkan Deskripsi">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Sub Dimensi</label>
-                                            <input type="text" name = 'subdimensi' class="form-control" id="example" value="{{ $data->subdimensi }}"
-                                                placeholder="Masukkan sub smart dimensi">
-                                            @error('judul')
+                                            <label for="exampleInputEmail1">Laman Website</label>
+                                            <input type="text" name = 'Website' class="form-control" id="example"value="{{ $data->Website }}"
+                                                placeholder="Masukkan Alamat Website">
+                                            @error('website')
                                                 <small>{{ $message }}</small>
                                             @enderror
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Photo</label>
-                                                <input type="file" name = 'photo' class="form-control"
-                                                    id="exampleInputFile1">
-                                            @error('photo')
-                                                <small>{{ $message }}</small>
-                                            @enderror
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                         </div>
                                     </div>
-                                    <!-- /.card-body -->
-
                                     <div class="card-footer">
                                         <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
