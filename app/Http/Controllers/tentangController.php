@@ -17,11 +17,11 @@ class tentangController extends Controller
     {
         $data = Produk::get();
 
-        return view('pages-tentang/d-tentang', compact('data'));
+        return view('admin/pages-tentang/d-tentang', compact('data'));
     }
     public function createFile()
     {
-        return view('pages-tentang/c-tentang');
+        return view('admin/pages-tentang/c-tentang');
     }
 
     public function storeFile(Request $request)
@@ -51,7 +51,7 @@ class tentangController extends Controller
     public function edit(Request $request,$id){
         $data = Produk::find($id);
 
-        return view('pages-tentang/e-tentang', compact('data'));
+        return view('admin/pages-tentang/e-tentang', compact('data'));
     }
     public function update(Request $request,$id){
         $data['nama'] = $request->Nama;

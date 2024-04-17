@@ -15,11 +15,11 @@ class berandaController extends Controller
     public function WebOpd(){
         $data = Opd::get();
 
-        return view('pages-web/d-web', compact('data'));
+        return view('admin/pages-web/d-web', compact('data'));
     }
     public function create()
     {
-        return view('pages-web/c-web');
+        return view('admin/pages-web/c-web');
     }
     public function store(Request $request){
         $validator = Validator::make($request->all(),[
@@ -40,7 +40,7 @@ class berandaController extends Controller
     public function edit(Request $request,$id){
         $data = Opd::find($id);
 
-        return view('pages-web/e-web', compact('data'));
+        return view('admin/pages-web/e-web', compact('data'));
     }
     public function update(Request $request,$id){
         $data['nama'] = $request->Nama;

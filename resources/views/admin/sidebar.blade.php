@@ -51,6 +51,22 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{route('website-dashboard')}}" class="nav-link">
+                        <i class="nav-icon far fa-copy"></i>
+                        <p>
+                            OPD
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('produk-tentang')}}" class="nav-link">
+                        <i class="nav-icon far fa-copy"></i>
+                        <p>
+                            Website
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
