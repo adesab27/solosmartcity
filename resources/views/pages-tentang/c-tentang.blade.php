@@ -11,7 +11,7 @@
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Edit Data</li>
+                            <li class="breadcrumb-item active">Create</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -22,9 +22,8 @@
         <!-- Main content -->
         <section class="content">
             <div class="container-fluid">
-                <form action="{{ route('dimensi.update',['id'=> $data->id]) }}" method="POST">
+                <form action="{{ route('store-tentang') }}" method="POST" enctype="multipart/form-data">
                     @csrf
-                    @method('PUT')
                     <div class="row">
                         <!-- left column -->
                         <div class="col-md-6">
@@ -38,37 +37,17 @@
                                 <form>
                                     <div class="card-body">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Judul</label>
-                                            <input type="text" name = 'judul' class="form-control" id="example" value="{{ $data->judul }}"
-                                                placeholder="Masukkan Judul">
-                                            @error('judul')
-                                                <small>{{ $message }}</small>
-                                            @enderror
+                                            <label for="exampleInputEmail1">Nama</label>
+                                            <input type="text" name = 'Nama' class="form-control" id="example"
+                                                placeholder="Masukkan Nama File">
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Description</label>
-                                            <input type="text" name = 'desc' class="form-control" id="example" value="{{ $data->desc }}"
-                                                placeholder="Masukkan Deskripsi">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Sub Dimensi</label>
-                                            <input type="text" name = 'subdimensi' class="form-control" id="example" value="{{ $data->subdimensi }}"
-                                                placeholder="Masukkan sub smart dimensi">
-                                            @error('judul')
-                                                <small>{{ $message }}</small>
-                                            @enderror
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Photo</label>
-                                                <input type="file" name = 'photo' class="form-control"
+                                            <label for="exampleInputEmail1">File PDF</label>
+                                                <input type="file" name = 'link' class="form-control"
                                                     id="exampleInputFile1">
-                                            @error('photo')
+                                            @error('link')
                                                 <small>{{ $message }}</small>
                                             @enderror
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                         </div>
                                     </div>
                                     <!-- /.card-body -->

@@ -14,8 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/beranda', [App\Http\Controllers\berandaController::class, 'index']);
+Route::get('/dashboard-web-opd', [App\Http\Controllers\berandaController::class, 'WebOpd']) -> name('website-dashboard');
+Route::get('/create-web-opd', [App\Http\Controllers\berandaController::class, 'create']) ->name('create-link');
+Route::post('/store-web-opd', [App\Http\Controllers\berandaController::class, 'store']) ->name('store-link');
+Route::get('/edit-web-opd/{id}', [App\Http\Controllers\berandaController::class, 'edit']) ->name('edit-link');
+Route::put('/update-web-opd/{id}', [App\Http\Controllers\berandaController::class, 'update']) ->name('update-link');
+Route::delete('/delete-web-opd/{id}', [App\Http\Controllers\berandaController::class, 'delete']) ->name('delete-link');
 
 Route::get('/tentang', [App\Http\Controllers\tentangController::class, 'index']);
+Route::get('/dashboard-tentang', [App\Http\Controllers\tentangController::class, 'linkFile']) -> name('produk-tentang');
+Route::get('/create-tentang', [App\Http\Controllers\tentangController::class, 'createFile']) -> name('create-tentang');
+Route::post('/store-tentang', [App\Http\Controllers\tentangController::class, 'storeFile']) -> name('store-tentang');
+Route::get('/edit-file/{id}', [App\Http\Controllers\tentangController::class, 'edit']) -> name('edit-tentang');
+Route::put('/update-file/{id}', [App\Http\Controllers\tentangController::class, 'update']) -> name('update-tentang');
+Route::delete('/delete-file/{id}', [App\Http\Controllers\tentangController::class, 'deleteFile']) ->name('delete-tentang');
 
 Route::get('/dimensi', [App\Http\Controllers\dimensiController::class, 'index']);
 Route::get('/dashboard', [App\Http\Controllers\dimensiController::class, 'dashboard']) ->name('dashboard');
