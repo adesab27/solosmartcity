@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminArticleController;
+use App\Http\Controllers\AdminSoloEventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,3 +50,10 @@ Route::post('/admin/opdlink/add', [App\Http\Controllers\AdminOpdController::clas
 Route::get('/admin/opdlink/edit/{id}', [App\Http\Controllers\AdminOpdController::class, 'edit'])->name('editOpdLink');
 Route::post('/admin/opdlink/update', [App\Http\Controllers\AdminOpdController::class, 'update'])->name('updateOpdLink');
 Route::get('/admin/opdlink/delete/{id}', [App\Http\Controllers\AdminOpdController::class, 'delete'])->name('deleteOpdLink');
+
+Route::get('/admin/article', [AdminArticleController::class, 'index'])->name('indexArticle');
+Route::get('/admin/article/add', [AdminArticleController::class, 'add'])->name('addviewArticle');
+Route::post('/admin/article/add', [AdminArticleController::class, 'create'])->name('addArticle');
+Route::get('/admin/article/edit/{id}', [AdminArticleController::class, 'edit'])->name('editArticle');
+Route::post('/admin/article/update', [AdminArticleController::class, 'update'])->name('updateArticle');
+Route::get('/admin/article/delete/{id}', [AdminArticleController::class, 'delete'])->name('deleteArticle');
