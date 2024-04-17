@@ -2,17 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class AdminSoloEventController extends Controller
 {
-    public function index (){
+    public function index()
+    {
         $data = DB::table('soloevent')->get();
         return view('admin.soloevent.index', ['data' => $data]);
     }
 
-    public function add(){
+
+    public function add()
+    {
         return view('admin.soloevent.add');
     }
 
@@ -32,13 +36,13 @@ class AdminSoloEventController extends Controller
             'end_periode' => $end_periode,
             'location' => $location,
             'description' => $description,
-            'image_url' =>  $image_url->getClientOriginalName(),
+            'image_url' =>  'eling_830' . date('Y-m-dH-i-s') . "." . $image_url->getClientOriginalExtension(),
             'is_galerysoloevent' => $is_galerysoloevent
         ]);
 
         if ($add) {
             $tujuan_upload = 'data_file';
-            $image_url->move($tujuan_upload, $image_url->getClientOriginalName());
+            $image_url->move($tujuan_upload, 'eling_830' . date('Y-m-dH-i-s') . "." . $image_url->getClientOriginalExtension());
             return redirect()->route('indexSoloEvent')
                 ->with('success', 'Data berhasil ditambahkan!');
         } else {
@@ -94,9 +98,11 @@ class AdminSoloEventController extends Controller
     }
     public function delete($id)
     {
+        $image_url = DB::table('soloevent')->where('id', $id)->first();
         $delete = DB::table('soloevent')->where('id', $id)->delete();
+        unlink('data_file/' . $image_url->image_url);
+
         return redirect()->route('indexSoloEvent')
             ->with('success', 'Data berhasil dihapus!');
     }
-
 }
