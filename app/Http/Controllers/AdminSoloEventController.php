@@ -69,6 +69,12 @@ class AdminSoloEventController extends Controller
         $description = $request->description;
         $image_url = $request->file("image_url");
         $is_galerysoloevent = $request->is_galerysoloevent ? 1 : 0;
+
+        // Mengambil data file lama
+        $old_image = DB::table('soloevent')->where('id', $id)->first();
+        $old_image_name = $old_image->image_url;
+
+
         if ($image_url == NULL) {
             $update = DB::table('soloevent')->where('id', $id)->update([
                 'title' => $title,
@@ -78,9 +84,25 @@ class AdminSoloEventController extends Controller
                 'description' => $description,
                 'is_galerysoloevent' => $is_galerysoloevent
             ]);
+
+            // Menghapus file lama jika ada
+            if ($old_image_name) {
+                unlink('data_file/' . $old_image_name);
+            }
+
             return redirect()->route('indexSoloEvent')
                 ->with('success', 'Data berhasil diupdate!');
         } else {
+            $new_image_name = $image_url->getClientOriginalName();
+
+            // Menghapus file lama jika ada
+            if ($old_image_name) {
+                unlink('data_file/' . $old_image_name);
+            }
+
+            // Memindahkan file baru dan menyimpan nama file baru ke dalam database
+            $image_url->move('data_file', $new_image_name);
+
             $update = DB::table('soloevent')->where('id', $id)->update([
                 'title' => $title,
                 'start_periode' => $start_periode,
@@ -90,8 +112,8 @@ class AdminSoloEventController extends Controller
                 'image_url' =>  $image_url->getClientOriginalName(),
                 'is_galerysoloevent' => $is_galerysoloevent
             ]);
-            $tujuan_upload = 'data_file';
-            $image_url->move($tujuan_upload, $image_url->getClientOriginalName());
+            // $tujuan_upload = 'data_file';
+            // $image_url->move($tujuan_upload, $image_url->getClientOriginalName());
             return redirect()->route('indexSoloEvent')
                 ->with('success', 'Data berhasil diupdate!');
         }

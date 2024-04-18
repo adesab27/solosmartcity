@@ -204,179 +204,25 @@
         </div>
     </div>
 
-    <!-- slider -->
-    {{-- <div class="card__container swiper">
-    <div class="card__content">
-      <div class="swiper-wrapper">
-        <article class="card__article swiper-slide">
-          <a href="https://surakarta.go.id/">
-            <div class="card__data">
-              <img
-                src="{{asset("assets/images/logo-ska.jpg")}}"
-                alt="image"
-                class="card__img"
-              />
-              <h3 class="card__name">Web Surakarta</h3>
-            </a>
-            </div>
-        </article>
-        <article class="card__article swiper-slide">
-          <a href="https://surakarta.go.id/">
-            <div class="card__data">
-              <img
-                src="{{asset("assets/images/logo-ska.jpg")}}"
-                alt="image"
-                class="card__img"
-              />
-              <h3 class="card__name">Web Surakarta</h3>
-            </a>
-            </div>
-        </article>
-        <article class="card__article swiper-slide">
-          <a href="https://surakarta.go.id/">
-            <div class="card__data">
-              <img
-                src="{{asset("assets/images/logo-ska.jpg")}}"
-                alt="image"
-                class="card__img"
-              />
-              <h3 class="card__name">Web Surakarta</h3>
-            </a>
-            </div>
-        </article>
-        <article class="card__article swiper-slide">
-          <a href="https://surakarta.go.id/">
-            <div class="card__data">
-              <img
-                src="{{asset("assets/images/logo-ska.jpg")}}"
-                alt="image"
-                class="card__img"
-              />
-              <h3 class="card__name">Web Surakarta</h3>
-            </a>
-            </div>
-        </article>
-        <article class="card__article swiper-slide">
-          <a href="https://surakarta.go.id/">
-            <div class="card__data">
-              <img
-                src="{{asset("assets/images/logo-ska.jpg")}}"
-                alt="image"
-                class="card__img"
-              />
-              <h3 class="card__name">Web Surakarta</h3>
-            </a>
-            </div>
-        </article>
-        <article class="card__article swiper-slide">
-          <a href="https://surakarta.go.id/">
-            <div class="card__data">
-              <img
-                src="{{asset("assets/images/logo-ska.jpg")}}"
-                alt="image"
-                class="card__img"
-              />
-              <h3 class="card__name">Web Surakarta</h3>
-            </a>
-            </div>
-        </article>
-        <article class="card__article swiper-slide">
-          <a href="https://surakarta.go.id/">
-            <div class="card__data">
-              <img
-                src="{{asset("assets/images/logo-ska.jpg")}}"
-                alt="image"
-                class="card__img"
-              />
-              <h3 class="card__name">Web Surakarta</h3>
-            </a>
-            </div>
-        </article>
-        <article class="card__article swiper-slide">
-          <a href="https://surakarta.go.id/">
-            <div class="card__data">
-              <img
-                src="{{asset("assets/images/logo-ska.jpg")}}"
-                alt="image"
-                class="card__img"
-              />
-              <h3 class="card__name">Web Surakarta</h3>
-            </a>
-            </div>
-        </article>
-      </div>
-    </div>
-
-    <!-- Navigation buttons -->
-    <!-- <div class="swiper-button-next">
-       <i class="ri-arrow-right-s-line"></i>
-    </div>
     
-    <div class="swiper-button-prev">
-       <i class="ri-arrow-left-s-line"></i>
-    </div> -->
-
-    <!-- Pagination -->
-    <div class="swiper-pagination"></div>
-  </div> --}}
-
     <div class="container">
         <div class="card-container" id="main-swiper">
-            <div class="card-items" id="items">
-                <div class="card-item" id="item">
-                    <img class="card-item-img" src="{{ asset('assets/images/logo-ska.jpg') }}" alt="category" />
-                    <div class="card-item-circle"></div>
-                    <p class="card-item-text">Web Surakarta</p>
-                    
-                </div>
-                <div class="card-item" id="item">
-                    <img class="card-item-img" src="{{ asset('assets/images/logo-ska.jpg') }}" alt="category" />
-                    <div class="card-item-circle"></div>
-                    <p class="card-item-text">Web Surakarta</p>
-                </div>
-                <div class="card-item" id="item">
-                    <img class="card-item-img" src="{{ asset('assets/images/logo-ska.jpg') }}" alt="category" />
-                    <div class="card-item-circle"></div>
-                    <p class="card-item-text">Web Surakarta</p>
-                </div>
-                <div class="card-item" id="item">
-                    <img class="card-item-img" src="{{ asset('assets/images/logo-ska.jpg') }}" alt="category" />
-                    <div class="card-item-circle"></div>
-                    <p class="card-item-text">Web Surakarta</p>
-                </div>
-                <div class="card-item" id="item">
-                    <img class="card-item-img" src="{{ asset('assets/images/logo-ska.jpg') }}" alt="category" />
-                    <div class="card-item-circle"></div>
-                    <p class="card-item-text">Web Surakarta</p>
-                </div>
-                <div class="card-item" id="item">
-                    <img class="card-item-img" src="{{ asset('assets/images/logo-ska.jpg') }}"alt="category" />
-                    <div class="card-item-circle"></div>
-                    <p class="card-item-text">Web Surakarta</p>
-                </div>
-                <div class="card-item" id="item">
-                    <img class="card-item-img" src="{{ asset('assets/images/logo-ska.jpg') }}"alt="category" />
-                    <div class="card-item-circle"></div>
-                    <p class="card-item-text">Web Surakarta</p>
-                </div>
-                <div class="card-item" id="item">
-                    <img class="card-item-img" src="{{ asset('assets/images/logo-ska.jpg') }}"alt="category" />
-                    <div class="card-item-circle"></div>
-                    <p class="card-item-text">Web Surakarta</p>
-                </div>
-                <div class="card-item" id="item">
-                    <img class="card-item-img" src="{{ asset('assets/images/logo-ska.jpg') }}"alt="category" />
-                    <div class="card-item-circle"></div>
-                    <p class="card-item-text">Web Surakarta</p>
-                </div>
+          <div class="card-items" id="items">
+            @foreach ($data as $d)
+            <div class="card-item" id="item">
+              <img class="card-item-img" src="{{asset("data_file/$d->image_url")}}" alt="category" />
+              <div class="card-item-circle"></div>
+              <p class="card-item-text">{{$d->title}}</p>
             </div>
-            <div class="btn next" id="next">
-                <button>Next</button>
-            </div>
-            <div class="btn prev" id="prev">
-                <button>Previus</button>
-            </div>
+            @endforeach
+          </div>
+          <div class="btn next" id="next">
+            <button>Next</button>
+          </div>
+          <div class="btn prev" id="prev">
+            <button>Previus</button>
+          </div>
         </div>
-    </div>
+      </div>
 
 @endsection

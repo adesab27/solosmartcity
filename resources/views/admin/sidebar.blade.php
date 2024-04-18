@@ -52,18 +52,10 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('website-dashboard')}}" class="nav-link">
+                    <a href="{{route('indexProdHukum')}}" class="nav-link">
                         <i class="nav-icon far fa-copy"></i>
                         <p>
-                            OPD
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{route('produk-tentang')}}" class="nav-link">
-                        <i class="nav-icon far fa-copy"></i>
-                        <p>
-                            Website
+                            Produk Hukum
                         </p>
                     </a>
                 </li>

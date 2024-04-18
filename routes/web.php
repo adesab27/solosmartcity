@@ -22,12 +22,6 @@ Route::put('/update-web-opd/{id}', [App\Http\Controllers\berandaController::clas
 Route::delete('/delete-web-opd/{id}', [App\Http\Controllers\berandaController::class, 'delete']) ->name('delete-link');
 
 Route::get('/tentang', [App\Http\Controllers\tentangController::class, 'index']);
-Route::get('/dashboard-tentang', [App\Http\Controllers\tentangController::class, 'linkFile']) -> name('produk-tentang');
-Route::get('/create-tentang', [App\Http\Controllers\tentangController::class, 'createFile']) -> name('create-tentang');
-Route::post('/store-tentang', [App\Http\Controllers\tentangController::class, 'storeFile']) -> name('store-tentang');
-Route::get('/edit-file/{id}', [App\Http\Controllers\tentangController::class, 'edit']) -> name('edit-tentang');
-Route::put('/update-file/{id}', [App\Http\Controllers\tentangController::class, 'update']) -> name('update-tentang');
-Route::delete('/delete-file/{id}', [App\Http\Controllers\tentangController::class, 'deleteFile']) ->name('delete-tentang');
 
 Route::get('/dimensi', [App\Http\Controllers\dimensiController::class, 'index']);
 Route::get('/dashboard', [App\Http\Controllers\dimensiController::class, 'dashboard']) ->name('dashboard');
@@ -60,3 +54,13 @@ Route::post('/admin/opdlink/add', [App\Http\Controllers\AdminOpdController::clas
 Route::get('/admin/opdlink/edit/{id}', [App\Http\Controllers\AdminOpdController::class, 'edit'])->name('editOpdLink');
 Route::post('/admin/opdlink/update', [App\Http\Controllers\AdminOpdController::class, 'update'])->name('updateOpdLink');
 Route::get('/admin/opdlink/delete/{id}', [App\Http\Controllers\AdminOpdController::class, 'delete'])->name('deleteOpdLink');
+
+Route::get('/admin/prodhukum', [App\Http\Controllers\AdminProdHukumController::class, 'index'])->name('indexProdHukum');
+Route::get('/admin/prodhukum/add', [App\Http\Controllers\AdminProdHukumController::class, 'add'])->name('addviewProdHukum');
+Route::post('/admin/prodhukum/add', [App\Http\Controllers\AdminProdHukumController::class, 'create'])->name('addProdHukum');
+Route::get('/admin/prodhukum/edit/{id}', [App\Http\Controllers\AdminProdHukumController::class, 'edit'])->name('editProdHukum');
+Route::post('/admin/prodhukum/update', [App\Http\Controllers\AdminProdHukumController::class, 'update'])->name('updateProdHukum');
+Route::get('/admin/prodhukum/delete/{id}', [App\Http\Controllers\AdminProdHukumController::class, 'delete'])->name('deleteProdHukum');
+
+// Search Dimensi
+Route::get('/search/dimensi', [App\Http\Controllers\dimensiController::class, 'search'])->name('searchDimensi');

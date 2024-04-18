@@ -267,7 +267,6 @@ table.dataTable.table-sm .sorting:before,
 table.dataTable.table-sm .sorting_asc:before,
 table.dataTable.table-sm .sorting_desc:before {
   top: 5px;
-  right: 0.85em;
 }
 table.dataTable.table-sm .sorting:after,
 table.dataTable.table-sm .sorting_asc:after,
