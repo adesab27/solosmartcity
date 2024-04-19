@@ -58,7 +58,7 @@ class dimensiController extends Controller
             ->join('dimensiauthor', 'dimensiarticle.author_id', '=', 'dimensiauthor.id_author')
             ->join('dimensicategory', 'dimensiarticle.category_id', '=', 'dimensicategory.id_category')
             ->select('dimensiarticle.*', 'dimensiauthor.author_name', 'dimensicategory.category_name', 'dimensicategory.category_alias')
-            ->paginate(1);
+            ->paginate(9);
         if ($request->ajax()) {
             return view('content/dimensi', ['data' => $data])->render();
         }

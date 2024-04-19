@@ -106,7 +106,7 @@
               <span class="category">{{$d->category_name}}</span>
               <!-- <span class="category year">{{date('Y')}}</span> -->
               <h4><a href="/dimensidetail"></a>{{ Str::limit($d->title,20) }}</h4>
-              <h6><a>{{ Str::limit(html_entity_decode(strip_tags($d->content)), 90) }}</a></h6><br>
+              <h6><a>{{ Str::limit(html_entity_decode(strip_tags($d->content)), 100) }}</a></h6><br>
               <div class="main-button">
                 <a href="{{route('dimensidetail', $d->id)}}">Selengkapnya</a>
               </div>
