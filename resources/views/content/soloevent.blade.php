@@ -23,7 +23,7 @@
             @foreach ($dataatas as $d)
             <div class="item">
               <div class="thumb">
-                <img src="{{asset("data_file/$d->image_url")}}" style="width: 410px; height: 413px; object-fit: fill;" alt="">
+                <img src="{{asset("data_file/$d->image_url")}}" style="width: 400px; height: 403px; object-fit: fill;" alt="">
                 <div class="hover-effect">
                   <div class="content">
                     <h4>{{$d->title}}</h4>
