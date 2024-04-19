@@ -217,14 +217,6 @@
                     </div>
                 </a>
             @endforeach
-
-            {{-- @foreach ($data as $d)
-            <div class="card-item" id="item">
-              <img class="card-item-img" src="{{asset("data_file/$d->image_url")}}" alt="category" />
-              <div class="card-item-circle"></div>
-              <p class="card-item-text">{{$d->title}}</p>
-            </div>
-            @endforeach --}}
           </div>
           <div class="btn next" id="next">
             <button>Next</button>
@@ -233,6 +225,6 @@
             <button>Previus</button>
           </div>
         </div>
-      </div>
+    </div>
 
 @endsection

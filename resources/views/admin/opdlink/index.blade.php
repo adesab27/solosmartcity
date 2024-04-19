@@ -88,7 +88,9 @@
                                             <tr>
                                                 <td>{{$loop->iteration}}</td>
                                                 <td>{{$d->title}}</td>
-                                                <td><img src="{{asset("data_file/$d->image_url")}}" width="128" height="128" alt=""></td>
+                                                <td>
+                                                    <img src="{{asset("data_file/$d->image_url")}}" width="50" height="50" alt="">
+                                                </td>
                                                 <td>{{$d->url}}</td>
                                                 <td>
                                                     <a class="btn btn-primary" href="{{route('editOpdLink', $d->id)}}">Edit</a>
