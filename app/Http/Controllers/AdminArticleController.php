@@ -10,8 +10,8 @@ class AdminArticleController extends Controller
     public function index()
     {
         $data = DB::table('dimensiarticle')
-            ->join('dimensiauthor', 'dimensiauthor.id', '=', 'dimensiarticle.author_id')
-            ->join('dimensicategory', 'dimensicategory.id', '=', 'dimensiarticle.category_id')
+            ->join('dimensiauthor', 'dimensiauthor.id_author', '=', 'dimensiarticle.author_id')
+            ->join('dimensicategory', 'dimensicategory.id_category', '=', 'dimensiarticle.category_id')
             ->get();
         return view('admin.article.index', ['data' => $data]);
     }
@@ -49,8 +49,8 @@ class AdminArticleController extends Controller
     public function edit($id)
     {
         $data = DB::table('dimensiarticle')
-            ->join('dimensiauthor', 'dimensiauthor.id', '=', 'dimensiarticle.author_id')
-            ->join('dimensicategory', 'dimensicategory.id', '=', 'dimensiarticle.category_id')
+            ->join('dimensiauthor', 'dimensiauthor.id_author', '=', 'dimensiarticle.author_id')
+            ->join('dimensicategory', 'dimensicategory.id_category', '=', 'dimensiarticle.category_id')
             ->where('dimensiarticle.id', $id)
             ->first();
         $author = DB::table('dimensiauthor')->get();

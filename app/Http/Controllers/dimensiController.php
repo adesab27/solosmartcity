@@ -13,17 +13,17 @@ class dimensiController extends Controller
     public function index(Request $request)
     {
         $data = DB::table('dimensiarticle')
-            ->join('dimensiauthor', 'dimensiarticle.author_id', '=', 'dimensiauthor.id')
-            ->join('dimensicategory', 'dimensiarticle.category_id', '=', 'dimensicategory.id')
+            ->join('dimensiauthor', 'dimensiarticle.author_id', '=', 'dimensiauthor.id_author')
+            ->join('dimensicategory', 'dimensiarticle.category_id', '=', 'dimensicategory.id_category')
             ->select('dimensiarticle.*', 'dimensiauthor.author_name', 'dimensicategory.category_name', 'dimensicategory.category_alias')
-            ->paginate(1);
+            ->paginate(9);
         return view('content/dimensi', ['data' => $data]);
     }
 
     public function fetch_data(Request $request)
     {
         if ($request->ajax()) {
-            $data = DB::table('posts')->paginate(5);
+            $data = DB::table('posts')->paginate(9);
             return view('pagination_data', compact('data'))->render();
         }
     }
@@ -33,8 +33,8 @@ class dimensiController extends Controller
         if ($request->search) {
             $output = "";
             $data = DB::table('dimensiarticle')
-                ->join('dimensiauthor', 'dimensiarticle.author_id', '=', 'dimensiauthor.id')
-                ->join('dimensicategory', 'dimensiarticle.category_id', '=', 'dimensicategory.id')
+                ->join('dimensiauthor', 'dimensiarticle.author_id', '=', 'dimensiauthor.id_author')
+                ->join('dimensicategory', 'dimensiarticle.category_id', '=', 'dimensicategory.id_category')
                 ->select('dimensiarticle.*', 'dimensiauthor.author_name', 'dimensicategory.category_name', 'dimensicategory.category_alias')
                 ->where('dimensiarticle.content', 'LIKE', '%' . $request->search . "%")
                 ->orWhere('dimensiarticle.title', 'LIKE', '%' . $request->search . "%")
@@ -55,8 +55,8 @@ class dimensiController extends Controller
     public function page(Request $request)
     {
         $data = DB::table('dimensiarticle')
-            ->join('dimensiauthor', 'dimensiarticle.author_id', '=', 'dimensiauthor.id')
-            ->join('dimensicategory', 'dimensiarticle.category_id', '=', 'dimensicategory.id')
+            ->join('dimensiauthor', 'dimensiarticle.author_id', '=', 'dimensiauthor.id_author')
+            ->join('dimensicategory', 'dimensiarticle.category_id', '=', 'dimensicategory.id_category')
             ->select('dimensiarticle.*', 'dimensiauthor.author_name', 'dimensicategory.category_name', 'dimensicategory.category_alias')
             ->paginate(1);
         if ($request->ajax()) {

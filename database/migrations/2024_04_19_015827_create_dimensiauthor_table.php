@@ -13,12 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('dimensis', function (Blueprint $table) {
-            $table->id();
-            $table->string('judul');
-            $table->longText('desc');
-            $table->string('subdimensi');
-            $table->timestamps();
+        Schema::create('dimensiauthor', function (Blueprint $table) {
+            $table->id('id_author');
+            $table->string('author_name');
         });
     }
 
@@ -29,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dimensis');
+        Schema::dropIfExists('dimensiauthor');
     }
 };

@@ -13,9 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('dimensiauthor', function (Blueprint $table) {
-            $table->id();
-            $table->string('author_name');
+        Schema::create('dimensicategory', function (Blueprint $table) {
+            $table->id('id_category');
+            $table->string('category_name');
+            $table->string('category_alias');
         });
     }
 
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dimensiauthor');
+        Schema::dropIfExists('dimensicategory');
     }
 };

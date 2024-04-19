@@ -87,7 +87,7 @@
                                             <label>Pilih Author</label>
                                             <select name="author_id" class="form-control">
                                                 @foreach ($author as $a)
-                                                <option value="{{$a->id}}">{{$a->author_name}}</option>
+                                                <option value="{{$a->id_author}}">{{$a->author_name}}</option>
                                                 @endforeach
                                             </select>
                                         </div>
@@ -95,7 +95,7 @@
                                             <label>Pilih Kategori</label>
                                             <select name="category_id" class="form-control">
                                                 @foreach ($category as $c)
-                                                <option value="{{$c->id}}">{{$c->category_name}}</option>
+                                                <option value="{{$c->id_category}}">{{$c->category_name}}</option>
                                                 @endforeach
                                             </select>
                                         </div>
