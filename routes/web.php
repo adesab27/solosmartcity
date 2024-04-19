@@ -23,6 +23,7 @@ Route::get('/soloevent', [App\Http\Controllers\soloeventController::class, 'inde
 Route::get('/experience', [App\Http\Controllers\experienceController::class, 'index']);
 Route::get('/dimensiutama', [App\Http\Controllers\dimensiutamaController::class, 'index']);
 Route::get('/dimensidetail', [App\Http\Controllers\dimensidetailController::class, 'index']);
+Route::get('/dimensidetail/{id}', [App\Http\Controllers\dimensidetailController::class, 'index'])->name('dimensidetail');
 
 
 // admin

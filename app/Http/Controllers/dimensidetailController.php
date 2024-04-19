@@ -13,8 +13,8 @@ class dimensidetailController extends Controller
     public function index($id)
     {
         $data = DB::table('dimensiarticle')
-            ->join('dimensiauthor', 'dimensiarticle.author_id', '=', 'dimensiauthor.id')
-            ->join('dimensicategory', 'dimensiarticle.category_id', '=', 'dimensicategory.id')
+            ->join('dimensiauthor', 'dimensiarticle.author_id', '=', 'dimensiauthor.id_author')
+            ->join('dimensicategory', 'dimensiarticle.category_id', '=', 'dimensicategory.id_category')
             ->select('dimensiarticle.*', 'dimensiauthor.author_name', 'dimensicategory.category_name', 'dimensicategory.category_alias')
             ->where('dimensiarticle.id', $id)
             ->first();
