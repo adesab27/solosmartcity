@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Produk;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Storage;
+use Validator;
 
 class tentangController extends Controller
 {
     public function index()
     {
-<<<<<<< HEAD
         return view('content/about');
     }
     public function linkFile()
@@ -67,9 +69,5 @@ class tentangController extends Controller
         }
 
         return redirect()->route('staff.produk-tentang');
-=======
-        $data = DB::table('prodhukum')->get();
-        return view('content/about', ['data' => $data]);
->>>>>>> c2e203e32842ec8ab14e5a993d61a9a901b358f2
     }
 }

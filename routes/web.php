@@ -20,22 +20,14 @@ Route::get('/logout', [App\Http\Controllers\LoginController::class, 'logout'])->
 
 // Frontend routes
 Route::get('/beranda', [App\Http\Controllers\berandaController::class, 'index']);
-<<<<<<< HEAD
+
 
 Route::get('/tentang', [App\Http\Controllers\tentangController::class, 'index']);
 
-=======
 Route::get('/tentang', [App\Http\Controllers\tentangController::class, 'index']);
 Route::get('/dimensi', [App\Http\Controllers\dimensiController::class, 'index']);
->>>>>>> c2e203e32842ec8ab14e5a993d61a9a901b358f2
 Route::get('/soloevent', [App\Http\Controllers\soloeventController::class, 'index']);
 Route::get('/experience', [App\Http\Controllers\experienceController::class, 'index']);
-<<<<<<< HEAD
-
-Route::get('/dimensi', [App\Http\Controllers\dimensiController::class, 'index']);
-
-=======
->>>>>>> c2e203e32842ec8ab14e5a993d61a9a901b358f2
 Route::get('/dimensiutama', [App\Http\Controllers\dimensiutamaController::class, 'index']);
 Route::get('/dimensidetail', [App\Http\Controllers\dimensidetailController::class, 'index']);
 Route::get('/dimensidetail/{id}', [App\Http\Controllers\dimensidetailController::class, 'index'])->name('dimensidetail');
@@ -81,8 +73,6 @@ Route::group(['prefix' => 'user', 'middleware' => ['auth'], 'as' => 'staff.'], f
     Route::delete('/delete/{id}', [App\Http\Controllers\dimensiController::class, 'delete'])->name('dimensi.delete');
 });
 
-<<<<<<< HEAD
-=======
 Route::get('/admin/opdlink', [App\Http\Controllers\AdminOpdController::class, 'index'])->name('indexOpdLink');
 Route::get('/admin/opdlink/add', [App\Http\Controllers\AdminOpdController::class, 'add'])->name('addViewOpdLink');
 Route::post('/admin/opdlink/add', [App\Http\Controllers\AdminOpdController::class, 'create'])->name('addOpdLink');
@@ -106,4 +96,3 @@ Route::get('/admin/prodhukum/delete/{id}', [App\Http\Controllers\AdminProdHukumC
 
 // Search Dimensi
 Route::get('/search/dimensi', [App\Http\Controllers\dimensiController::class, 'search'])->name('searchDimensi');
->>>>>>> c2e203e32842ec8ab14e5a993d61a9a901b358f2

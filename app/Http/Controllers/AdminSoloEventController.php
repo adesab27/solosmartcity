@@ -84,9 +84,6 @@ class AdminSoloEventController extends Controller
                 'description' => $description,
                 'is_galerysoloevent' => $is_galerysoloevent
             ]);
-<<<<<<< HEAD
-            return redirect()->route('staff.indexSoloEvent')
-=======
 
             // Menghapus file lama jika ada
             if ($old_image_name) {
@@ -94,7 +91,6 @@ class AdminSoloEventController extends Controller
             }
 
             return redirect()->route('indexSoloEvent')
->>>>>>> c2e203e32842ec8ab14e5a993d61a9a901b358f2
                 ->with('success', 'Data berhasil diupdate!');
         } else {
             $new_image_name = $image_url->getClientOriginalName();
@@ -116,15 +112,9 @@ class AdminSoloEventController extends Controller
                 'image_url' =>  $image_url->getClientOriginalName(),
                 'is_galerysoloevent' => $is_galerysoloevent
             ]);
-<<<<<<< HEAD
-            $tujuan_upload = 'data_file';
-            $image_url->move($tujuan_upload, $image_url->getClientOriginalName());
-            return redirect()->route('staff.indexSoloEvent')
-=======
             // $tujuan_upload = 'data_file';
             // $image_url->move($tujuan_upload, $image_url->getClientOriginalName());
             return redirect()->route('indexSoloEvent')
->>>>>>> c2e203e32842ec8ab14e5a993d61a9a901b358f2
                 ->with('success', 'Data berhasil diupdate!');
         }
     }
