@@ -46,7 +46,7 @@ class tentangController extends Controller
 
         Produk::create($data);
 
-        return redirect()->route('produk-tentang');
+        return redirect()->route('staff.produk-tentang');
     }
     public function edit(Request $request,$id){
         $data = Produk::find($id);
@@ -58,7 +58,7 @@ class tentangController extends Controller
 
         Produk::whereId($id)->update($data);
 
-        return redirect()->route('produk-tentang');
+        return redirect()->route('staff.produk-tentang');
     }
     public function deleteFile(Request $request,$id){
         $data = Produk::find($id);
@@ -67,6 +67,6 @@ class tentangController extends Controller
             $data->delete();
         }
 
-        return redirect()->route('produk-tentang');
+        return redirect()->route('staff.produk-tentang');
     }
 }

@@ -62,7 +62,7 @@
             <!-- Main content -->
             <section class="content">
                 <div class="container-fluid">
-                    <form action="{{ route('store-tentang') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('staff.store-tentang') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
                             <!-- left column -->

@@ -35,7 +35,7 @@ class berandaController extends Controller
 
         Opd::create($data);
 
-        return redirect()->route('website-dashboard');
+        return redirect()->route('staff.website-dashboard');
     }
     public function edit(Request $request,$id){
         $data = Opd::find($id);
@@ -48,7 +48,7 @@ class berandaController extends Controller
 
         Opd::whereId($id)->update($data);
 
-        return redirect()->route('website-dashboard');
+        return redirect()->route('staff.website-dashboard');
     }
     public function delete(Request $request,$id){
         $data = Opd::find($id);
@@ -57,6 +57,6 @@ class berandaController extends Controller
             $data->delete();
         }
 
-        return redirect()->route('website-dashboard');
+        return redirect()->route('staff.website-dashboard');
     }
 }

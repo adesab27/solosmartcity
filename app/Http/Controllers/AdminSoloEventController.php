@@ -43,10 +43,10 @@ class AdminSoloEventController extends Controller
         if ($add) {
             $tujuan_upload = 'data_file';
             $image_url->move($tujuan_upload, 'eling_830' . date('Y-m-dH-i-s') . "." . $image_url->getClientOriginalExtension());
-            return redirect()->route('indexSoloEvent')
+            return redirect()->route('staff.indexSoloEvent')
                 ->with('success', 'Data berhasil ditambahkan!');
         } else {
-            return redirect()->route('indexSoloEvent')
+            return redirect()->route('staff.indexSoloEvent')
                 ->with('failed', 'Data gagal ditambahkan!');
         }
     }
@@ -78,7 +78,7 @@ class AdminSoloEventController extends Controller
                 'description' => $description,
                 'is_galerysoloevent' => $is_galerysoloevent
             ]);
-            return redirect()->route('indexSoloEvent')
+            return redirect()->route('staff.indexSoloEvent')
                 ->with('success', 'Data berhasil diupdate!');
         } else {
             $update = DB::table('soloevent')->where('id', $id)->update([
@@ -92,7 +92,7 @@ class AdminSoloEventController extends Controller
             ]);
             $tujuan_upload = 'data_file';
             $image_url->move($tujuan_upload, $image_url->getClientOriginalName());
-            return redirect()->route('indexSoloEvent')
+            return redirect()->route('staff.indexSoloEvent')
                 ->with('success', 'Data berhasil diupdate!');
         }
     }
@@ -102,7 +102,7 @@ class AdminSoloEventController extends Controller
         $delete = DB::table('soloevent')->where('id', $id)->delete();
         unlink('data_file/' . $image_url->image_url);
 
-        return redirect()->route('indexSoloEvent')
+        return redirect()->route('staff.indexSoloEvent')
             ->with('success', 'Data berhasil dihapus!');
     }
 }

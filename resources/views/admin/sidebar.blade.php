@@ -36,7 +36,7 @@
                 <!-- Add icons to the links using the .nav-icon class
             with font-awesome or any other icon font library -->
                 <li class="nav-item">
-                    <a href="{{route('indexSoloEvent')}}" class="nav-link">
+                    <a href="{{route('staff.indexSoloEvent')}}" class="nav-link">
                         <i class="nav-icon far fa-copy"></i>
                         <p>
                             Solo Event
@@ -44,7 +44,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('indexOpdLink')}}" class="nav-link">
+                    <a href="{{route('staff.indexOpdLink')}}" class="nav-link">
                         <i class="nav-icon far fa-copy"></i>
                         <p>
                             OPD Link
@@ -52,18 +52,18 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('website-dashboard')}}" class="nav-link">
+                    <a href="{{route('staff.produk-tentang')}}" class="nav-link">
                         <i class="nav-icon far fa-copy"></i>
                         <p>
-                            OPD
+                            Produk Hukum
                         </p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('produk-tentang')}}" class="nav-link">
-                        <i class="nav-icon far fa-copy"></i>
+                    <a href="{{route('logout')}}" class="nav-link">
+                        <i class="nav-icon far fa-log-out"></i>
                         <p>
-                            Website
+                            Keluar
                         </p>
                     </a>
                 </li>

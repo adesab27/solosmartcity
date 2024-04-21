@@ -45,7 +45,7 @@ class dimensiController extends Controller
 
         Dimensi::create($data);
 
-        return redirect()->route('dashboard');
+        return redirect()->route('staff.dashboard');
     }
 
     public function edit(Request $request,$id){
@@ -68,7 +68,7 @@ class dimensiController extends Controller
 
         Dimensi::whereId($id)->update($data);
 
-        return redirect()->route('dashboard');
+        return redirect()->route('staff.dashboard');
     }
 
     public function delete(Request $request,$id){
@@ -78,6 +78,6 @@ class dimensiController extends Controller
             $data->delete();
         }
 
-        return redirect()->route('dashboard');
+        return redirect()->route('staff.dashboard');
     }
 }

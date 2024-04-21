@@ -51,7 +51,7 @@
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{ route('staff.dashboard') }}">Home</a></li>
                                 <li class="breadcrumb-item active">Dashboard Keputusan Wali</li>
                             </ol>
                         </div><!-- /.col -->
@@ -65,7 +65,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <a href="{{ route('create-tentang') }}" class="btn btn-primary mb-2"> Tambah Data</a>
+                            <a href="{{ route('staff.create-tentang') }}" class="btn btn-primary mb-2"> Tambah Data</a>
                             <div class="card">
                                 <div class="card-header">
                                     <h3 class="card-title">Table Form Keputusan Wali</h3>
@@ -95,7 +95,7 @@
                                                             alt="">
                                                     </td>
                                                     <td>
-                                                        <a href="{{ route('edit-tentang', ['id' => $d->id]) }}"
+                                                        <a href="{{ route('staff.edit-tentang', ['id' => $d->id]) }}"
                                                             class="btn btn-primary"><i class="fas fa-pen"></i> Edit</a>
                                                         <a data-toggle="modal"
                                                             data-target="#modal-hapus{{ $d->id }}"
@@ -120,7 +120,7 @@
                                                             </div>
                                                             <div class="modal-footer justify-content-between">
                                                                 <form
-                                                                    action="{{ route('delete-tentang', ['id' => $d->id]) }}"
+                                                                    action="{{ route('staff.delete-tentang', ['id' => $d->id]) }}"
                                                                     method="POST">
                                                                     @csrf
                                                                     @method('DELETE')
