@@ -52,7 +52,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('indexProdHukum')}}" class="nav-link">
+                    <a href="{{route('staff.indexProdHukum')}}" class="nav-link">
                         <i class="nav-icon far fa-copy"></i>
                         <p>
                             Produk Hukum
@@ -60,10 +60,18 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('indexArticle')}}" class="nav-link">
+                    <a href="{{route('staff.indexArticle')}}" class="nav-link">
                         <i class="nav-icon far fa-copy"></i>
                         <p>
                             Artikel
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('logout')}}" class="nav-link">
+                        <i class="nav-icon far fa-log-out"></i>
+                        <p>
+                            Keluar
                         </p>
                     </a>
                 </li>

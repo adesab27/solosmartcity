@@ -69,7 +69,7 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3 class="card-title">DataTable with default features</h3>
-                                    <a href="{{route('addviewArticle')}}" class="btn btn-primary float-right">Create</a>
+                                    <a href="{{route('staff.addviewArticle')}}" class="btn btn-primary float-right">Create</a>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
@@ -95,8 +95,8 @@
                                                 <td>{{$d->category_name}}</td>
                                                 <td><?php echo $d->content; ?></td>
                                                 <td>
-                                                    <a class="btn btn-primary" href="{{route('editArticle', $d->id)}}">Edit</a>
-                                                    <a class="btn btn-danger" href="{{route('deleteArticle', $d->id)}}">Delete</a>
+                                                    <a class="btn btn-primary" href="{{route('staff.editArticle', $d->id)}}">Edit</a>
+                                                    <a class="btn btn-danger" href="{{route('staff.deleteArticle', $d->id)}}">Delete</a>
                                                 </td>
                                             </tr>
                                             @endforeach

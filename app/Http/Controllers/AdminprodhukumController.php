@@ -68,7 +68,7 @@ class AdminprodhukumController extends Controller
                 unlink('data_file/' . $old_file_name);
             }
 
-            return redirect()->route('indexProdHukum')
+            return redirect()->route('staff.indexProdHukum')
                 ->with('success', 'Data berhasil diupdate!');
         } else {
             $new_file_name = $file_url->getClientOriginalName();
@@ -87,7 +87,7 @@ class AdminprodhukumController extends Controller
             ]);
             // $tujuan_upload = 'data_file';
             // $file_url->move($tujuan_upload, $file_url->getClientOriginalName());
-            return redirect()->route('indexProdHukum')
+            return redirect()->route('staff.indexProdHukum')
                 ->with('success', 'Data berhasil diupdate!');
         }
     }
@@ -98,7 +98,7 @@ class AdminprodhukumController extends Controller
         $delete = DB::table('prodhukum')->where('id', $id)->delete();
         unlink('data_file/' . $file_url->file_url);
 
-        return redirect()->route('indexProdHukum')
+        return redirect()->route('staff.indexProdHukum')
             ->with('success', 'Data berhasil dihapus!');
     }
 }
