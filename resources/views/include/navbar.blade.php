@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <nav class="main-nav">
+        <nav class="main-nav ">
           <!-- ***** Logo Start ***** -->
           <a href="/beranda" class="logo">
             <h1>SoloSmartcity</h1>
