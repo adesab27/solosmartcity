@@ -208,7 +208,7 @@
     <div class="container">
         <div class="card-container" id="main-swiper">
             <div clas s="card-items" id="items">
-                <div class="card-item" id="item">
+                <div class="card-iteem" id="item">
                     <img class="card-item-img" src="{{ asset('assets/images/logo-ska.jpg') }}" alt="category" />
                     <div class="card-item-circle"></div>
                     <p class="card-item-text">PPID</p>
