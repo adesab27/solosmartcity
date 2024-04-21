@@ -48,12 +48,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">OPD Link</h1>
+                            <h1 class="m-0">Article</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">OPD Link</li>
+                                <li class="breadcrumb-item active">Article</li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -69,7 +69,7 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3 class="card-title">DataTable with default features</h3>
-                                    <a href="{{route('staff.addViewOpdLink')}}" class="btn btn-primary float-right">Create</a>
+                                    <a href="{{route('addviewArticle')}}" class="btn btn-primary float-right">Create</a>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
@@ -79,7 +79,9 @@
                                                 <th>No</th>
                                                 <th>Title</th>
                                                 <th>Image</th>
-                                                <th>Link URL</th>
+                                                <th>Author</th>
+                                                <th>Category</th>
+                                                <th>Content</th>
                                                 <th>Aksi</th>
                                             </tr>
                                         </thead>
@@ -88,13 +90,13 @@
                                             <tr>
                                                 <td>{{$loop->iteration}}</td>
                                                 <td>{{$d->title}}</td>
+                                                <td><img src="{{asset("data_file/$d->image_url")}}" width="128" height="128" alt=""></td>
+                                                <td>{{$d->author_name}}</td>
+                                                <td>{{$d->category_name}}</td>
+                                                <td><?php echo $d->content; ?></td>
                                                 <td>
-                                                    <img src="{{asset("data_file/$d->image_url")}}" width="50" height="50" alt="">
-                                                </td>
-                                                <td>{{$d->url}}</td>
-                                                <td>
-                                                    <a class="btn btn-primary" href="{{route('staff.editOpdLink', $d->id)}}">Edit</a>
-                                                    <a class="btn btn-danger" href="{{route('staff.deleteOpdLink', $d->id)}}">Delete</a>
+                                                    <a class="btn btn-primary" href="{{route('editArticle', $d->id)}}">Edit</a>
+                                                    <a class="btn btn-danger" href="{{route('deleteArticle', $d->id)}}">Delete</a>
                                                 </td>
                                             </tr>
                                             @endforeach

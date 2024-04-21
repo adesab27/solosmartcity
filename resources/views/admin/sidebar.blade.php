@@ -52,7 +52,11 @@
                     </a>
                 </li>
                 <li class="nav-item">
+<<<<<<< HEAD
                     <a href="{{route('staff.produk-tentang')}}" class="nav-link">
+=======
+                    <a href="{{route('indexProdHukum')}}" class="nav-link">
+>>>>>>> c2e203e32842ec8ab14e5a993d61a9a901b358f2
                         <i class="nav-icon far fa-copy"></i>
                         <p>
                             Produk Hukum
@@ -60,10 +64,17 @@
                     </a>
                 </li>
                 <li class="nav-item">
+<<<<<<< HEAD
                     <a href="{{route('logout')}}" class="nav-link">
                         <i class="nav-icon far fa-log-out"></i>
                         <p>
                             Keluar
+=======
+                    <a href="{{route('indexArticle')}}" class="nav-link">
+                        <i class="nav-icon far fa-copy"></i>
+                        <p>
+                            Artikel
+>>>>>>> c2e203e32842ec8ab14e5a993d61a9a901b358f2
                         </p>
                     </a>
                 </li>

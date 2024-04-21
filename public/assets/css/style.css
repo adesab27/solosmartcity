@@ -1259,7 +1259,7 @@ Video Style
   padding: 0;
   width: 44px;
   height: 44px;
-  margin: 0 5px;
+  margin: -90px 5px;
   position: absolute;
   align-self: center;
   vertical-align: middle;
@@ -1275,13 +1275,14 @@ Video Style
 
 .card-item {
   margin: 24px;
-  height: 215px;
+  height: 30px;
   display: grid;
   max-width: 150px;
   transition: 0.2s;
   position: relative;
   justify-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .card-item:hover {
@@ -1300,6 +1301,9 @@ Video Style
 
 .card-item-img {
   padding: 0;
+  width: 95px;
+  height: 100px;
+  object-fit: cover;
   height: flex;
   margin-top: -8px;
   position: absolute;
@@ -1308,7 +1312,7 @@ Video Style
 }
 
 .card-item-text {
-  margin: 10px;
+  margin-top: -50px;
   text-align: center;
 }
 
@@ -1613,6 +1617,7 @@ Trending
 
 .ppost_nav li {
   border-top: none;
+
 }
 
 .catg3_snav li {
@@ -1647,7 +1652,7 @@ Properties Style
 .properties .item {
   background-color: #fafafa;
   border-radius: 10px;
-  padding: 30px;
+  padding: 40px;
   margin-top: 1px;
 }
 

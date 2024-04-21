@@ -2,16 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Opd;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\DB;
 
 class berandaController extends Controller
 {
     public function index(){
-        return view('content/beranda');
+        $data = DB::table('opdlink')->get();
+        return view('content/beranda', ['data' => $data]);
     }
 
+<<<<<<< HEAD
     public function WebOpd(){
         $data = Opd::get();
 
@@ -59,4 +61,6 @@ class berandaController extends Controller
 
         return redirect()->route('staff.website-dashboard');
     }
+=======
+>>>>>>> c2e203e32842ec8ab14e5a993d61a9a901b358f2
 }
