@@ -41,7 +41,7 @@ class AdminArticleController extends Controller
         if ($add) {
             $tujuan_upload = 'data_file';
             $image_url->move($tujuan_upload, $image_url->getClientOriginalName());
-            return redirect()->route('indexArticle')
+            return redirect()->route('staff.indexArticle')
                 ->with('success', 'Data berhasil dihapus!');
         }
     }
@@ -74,7 +74,7 @@ class AdminArticleController extends Controller
                     'category_id' => $category_id,
                     'content' => $content
                 ]);
-            return redirect()->route('indexArticle')
+            return redirect()->route('staff.indexArticle')
                 ->with('success', 'Data berhasil dihapus!');
         } else {
             $update = DB::table('dimensiarticle')->where('id', $id)
@@ -87,7 +87,7 @@ class AdminArticleController extends Controller
                 ]);
             $tujuan_upload = 'data_file';
             $image_url->move($tujuan_upload, $image_url->getClientOriginalName());
-            return redirect()->route('indexArticle')
+            return redirect()->route('staff.indexArticle')
                 ->with('success', 'Data berhasil dihapus!');
         }
     }
@@ -95,7 +95,7 @@ class AdminArticleController extends Controller
     public function delete($id)
     {
         $delete = DB::table('dimensiarticle')->where('id', $id)->delete();
-        return redirect()->route('indexArticle')
+        return redirect()->route('staff.indexArticle')
             ->with('success', 'Data berhasil dihapus!');
     }
 }

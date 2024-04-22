@@ -79,7 +79,7 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3 class="card-title">DataTable with default features</h3>
-                                    <a href="{{route('addViewSoloEvent')}}" class="btn btn-primary float-right">Create</a>
+                                    <a href="{{route('staff.addViewSoloEvent')}}" class="btn btn-primary float-right">Create</a>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
@@ -109,8 +109,8 @@
                                                 <td><img src="{{asset("data_file/$d->image_url")}}" width="128" height="128" alt=""></td>
                                                 <td>{{$d->is_galerysoloevent}}</td>
                                                 <td>
-                                                    <a class="btn btn-primary" href="{{route('editSoloEvent', $d->id)}}">Edit</a>
-                                                    <a class="btn btn-danger" href="{{route('deleteSoloEvent', $d->id)}}">Delete</a>
+                                                    <a class="btn btn-primary" href="{{route('staff.editSoloEvent', $d->id)}}">Edit</a>
+                                                    <a class="btn btn-danger" href="{{route('staff.deleteSoloEvent', $d->id)}}">Delete</a>
                                                 </td>
                                             </tr>
                                             @endforeach

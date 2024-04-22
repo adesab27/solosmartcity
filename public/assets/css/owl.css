@@ -331,6 +331,18 @@
   transform: translateX(30%);
   transition: 1s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
 }
+.photo__name2 {
+  text-transform: uppercase;
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  margin-top: -30px;
+  transition: 0.4s ease-in-out 0.4s;
+  position: relative;
+  width: 100%;
+}
 .photo__name {
   text-transform: uppercase;
   font-size: 40px;
@@ -346,10 +358,12 @@
 .photo:hover .photo__image img {
   transform: translateX(0%);
 }
-.photo:hover .photo__name {
+.photo:hover .photo__name  {
   color: #fff;
 }
-
+.photo:hover .photo__name2  {
+  color: #fff;
+}
 @keyframes move-it {
   0%, 90%, 100% {
     transform: translateY(2%);

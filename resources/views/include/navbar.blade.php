@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <nav class="main-nav">
+        <nav class="main-nav ">
           <!-- ***** Logo Start ***** -->
           <a href="/beranda" class="logo">
             <h1>SoloSmartcity</h1>
@@ -17,7 +17,7 @@
             <li><a href="/soloevent" class="{{ request()->is('soloevent') ? 'active' : '' }}">Solo Events</a></li>
             <li><a href="/experience" class="{{ request()->is('experience') ? 'active' : '' }}">Digital Experience</a></li>
             <li>
-              <a href="#" data-toggle="modal" data-target="#modal-default"><i class="fa fa-search"></i> Search</a>
+              <a href="#" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search"></i> Search</a>
             </li>
           </ul>
           <a class="menu-trigger">
@@ -30,7 +30,7 @@
   </div>
 </header>
 
-<div class="modal fade" id="modal-default">
+<div class="modal fade" id="searchModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">

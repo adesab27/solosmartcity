@@ -67,7 +67,7 @@
                                 </div>
                                 <!-- /.card-header -->
                                 <!-- form start -->
-                                <form action="{{route('addArticle')}}" method="POST" enctype="multipart/form-data">
+                                <form action="{{route('staff.addArticle')}}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="card-body">
                                         <div class="form-group">

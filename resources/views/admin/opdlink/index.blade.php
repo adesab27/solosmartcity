@@ -69,7 +69,7 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3 class="card-title">DataTable with default features</h3>
-                                    <a href="{{route('addViewOpdLink')}}" class="btn btn-primary float-right">Create</a>
+                                    <a href="{{route('staff.addViewOpdLink')}}" class="btn btn-primary float-right">Create</a>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
@@ -93,8 +93,8 @@
                                                 </td>
                                                 <td>{{$d->url}}</td>
                                                 <td>
-                                                    <a class="btn btn-primary" href="{{route('editOpdLink', $d->id)}}">Edit</a>
-                                                    <a class="btn btn-danger" href="{{route('deleteOpdLink', $d->id)}}">Delete</a>
+                                                    <a class="btn btn-primary" href="{{route('staff.editOpdLink', $d->id)}}">Edit</a>
+                                                    <a class="btn btn-danger" href="{{route('staff.deleteOpdLink', $d->id)}}">Delete</a>
                                                 </td>
                                             </tr>
                                             @endforeach

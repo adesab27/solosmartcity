@@ -32,10 +32,10 @@ class AdminOpdController extends Controller
         if ($add) {
             $tujuan_upload = 'data_file';
             $image_url->move($tujuan_upload, $image_url->getClientOriginalName());
-            return redirect()->route('indexOpdLink')
+            return redirect()->route('staff.indexOpdLink')
                 ->with('success', 'Data berhasil ditambahkan!');
         } else {
-            return redirect()->route('indexOpdLink')
+            return redirect()->route('staff.indexOpdLink')
                 ->with('failed', 'Data gagal ditambahkan!');
         }
     }
@@ -70,7 +70,7 @@ class AdminOpdController extends Controller
                 unlink('data_file/' . $old_image_name);
             }
 
-            return redirect()->route('indexOpdLink')
+            return redirect()->route('staff.indexOpdLink')
                 ->with('success', 'Data berhasil diupdate!');
         } else {
             $new_image_name = $image_url->getClientOriginalName();
@@ -90,7 +90,7 @@ class AdminOpdController extends Controller
             ]);
             // $tujuan_upload = 'data_file';
             // $image_url->move($tujuan_upload, $image_url->getClientOriginalName());
-            return redirect()->route('indexOpdLink')
+            return redirect()->route('staff.indexOpdLink')
                 ->with('success', 'Data berhasil diupdate!');
         }
     }
@@ -101,7 +101,7 @@ class AdminOpdController extends Controller
         $delete = DB::table('opdlink')->where('id', $id)->delete();
         unlink('data_file/' . $image_url->image_url);
 
-        return redirect()->route('indexOpdLink')
+        return redirect()->route('staff.indexOpdLink')
             ->with('success', 'Data berhasil dihapus!');
     }
 }

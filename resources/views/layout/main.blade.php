@@ -251,13 +251,13 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="{{ route('dashboard') }}" class="nav-link">
+                                    <a href="{{ route('staff.dashboard') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Artikel</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('dimensi.create') }}" class="nav-link">
+                                    <a href="{{ route('staff.dimensi.create') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Tambah Artikel</p>
                                     </a>
@@ -265,7 +265,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('dashboard') }}" class="nav-link">
+                            <a href="{{ route('staff.dashboard') }}" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Artikel
@@ -273,7 +273,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('produk-tentang') }}" class="nav-link">
+                            <a href="{{ route('staff.produk-tentang') }}" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Form Link File
@@ -281,7 +281,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('website-dashboard') }}" class="nav-link">
+                            <a href="{{ route('staff.website-dashboard') }}" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Form Website

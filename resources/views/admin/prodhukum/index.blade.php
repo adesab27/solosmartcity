@@ -69,7 +69,7 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3 class="card-title">DataTable with default features</h3>
-                                    <a href="{{route('addviewProdHukum')}}" class="btn btn-primary float-right">Create</a>
+                                    <a href="{{route('staff.addviewProdHukum')}}" class="btn btn-primary float-right">Create</a>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
@@ -89,8 +89,8 @@
                                                 <td>{{$d->title}}</td>
                                                 <td>{{$d->file_url}}</td>
                                                 <td>
-                                                    <a class="btn btn-primary" href="{{route('editProdHukum', $d->id)}}">Edit</a>
-                                                    <a class="btn btn-danger" href="{{route('deleteProdHukum', $d->id)}}">Delete</a>
+                                                    <a class="btn btn-primary" href="{{route('staff.editProdHukum', $d->id)}}">Edit</a>
+                                                    <a class="btn btn-danger" href="{{route('staff.deleteProdHukum', $d->id)}}">Delete</a>
                                                 </td>
                                             </tr>
                                             @endforeach

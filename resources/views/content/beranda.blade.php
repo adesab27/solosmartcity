@@ -207,23 +207,19 @@
     
     <div class="container">
         <div class="card-container" id="main-swiper">
-          <div class="card-items" id="items">
-            @foreach ($data as $d)
-                <a href="{{$d->url}}" target="_blank"> <!-- Tautan yang mengarah ke URL yang sesuai -->
-                    <div class="card-item" id="item">
-                        <img class="card-item-img" src="{{asset("data_file/$d->image_url")}}" alt="category" />
-                        <div class="card-item-circle"></div>
-                        <p class="card-item-text">{{$d->title}}</p>
-                    </div>
-                </a>
-            @endforeach
-          </div>
-          <div class="btn next" id="next">
-            <button>Next</button>
-          </div>
-          <div class="btn prev" id="prev">
-            <button>Previus</button>
-          </div>
+            <div clas s="card-items" id="items">
+                <div class="card-iteem" id="item">
+                    <img class="card-item-img" src="{{ asset('assets/images/logo-ska.jpg') }}" alt="category" />
+                    <div class="card-item-circle"></div>
+                    <p class="card-item-text">PPID</p>
+                </div>
+            </div>
+            <div class="btn next" id="next">
+                <button>Next</button>
+            </div>
+            <div class="btn prev" id="prev">
+                <button>Previous</button>
+            </div>
         </div>
     </div>
 

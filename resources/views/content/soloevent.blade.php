@@ -19,7 +19,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="owl-features owl-carousel" style="position: relative; z-index: 5;">
+          <div class="owl-features owl-carousel" style="position: relative; z-index: 5;  ">
             @foreach ($dataatas as $d)
             <div class="item">
               <div class="thumb">
