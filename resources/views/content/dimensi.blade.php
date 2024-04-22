@@ -120,15 +120,16 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
+            <div class="popular-item">
               <div class="owl-features owl-carousel" style="position: relative; z-index: 5;">
-                @foreach ($data as $d)
+                @foreach ($datainovasi as $i)
                 <div class="item">
                   <div class="thumb">
-                    <img src="{{asset("data_file/$d->image_url")}}" style="width: 300px; height: 170px; object-fit: fill;" alt="">
+                    <img src="{{asset("data_file/$i->image_url")}}" style="width: 300px; height: 170px; object-fit: fill;" alt="">
                     <div class=" hover-effect">
                       <div class="content">
-                        <h4>{{$d->title}}</h4>
-                        <button class="btn btn-success">Selengkapnya</button>
+                        
+                        <h4>{{$i->inovasi_name}}</h4>
                       </div>
                     </div>
                   </div>

@@ -12,13 +12,17 @@ class dimensiController extends Controller
 {
     public function index(Request $request)
     {
+        $datainovasi = DB::table('inovasi')->get();
         $data = DB::table('dimensiarticle')
             ->join('dimensiauthor', 'dimensiarticle.author_id', '=', 'dimensiauthor.id_author')
             ->join('dimensicategory', 'dimensiarticle.category_id', '=', 'dimensicategory.id_category')
             ->select('dimensiarticle.*', 'dimensiauthor.author_name', 'dimensicategory.category_name', 'dimensicategory.category_alias')
             ->paginate(9);
-        return view('content/dimensi', ['data' => $data]);
+            // dd($request->all());
+        return view('content/dimensi', ['data' => $data, 'datainovasi' => $datainovasi]);
     }
+
+
 
     public function fetch_data(Request $request)
     {

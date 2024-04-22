@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminArticleController;
 use App\Http\Controllers\AdminSoloEventController;
+use App\Http\Controllers\AdminInovasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +48,13 @@ Route::post('/admin/article/add', [AdminArticleController::class, 'create'])->na
 Route::get('/admin/article/edit/{id}', [AdminArticleController::class, 'edit'])->name('editArticle');
 Route::post('/admin/article/update', [AdminArticleController::class, 'update'])->name('updateArticle');
 Route::get('/admin/article/delete/{id}', [AdminArticleController::class, 'delete'])->name('deleteArticle');
+
+Route::get('/admin/inovasi', [App\Http\Controllers\AdminInovasiController::class, 'index'])->name('indexInovasi');
+Route::get('/admin/inovasi/add', [App\Http\Controllers\AdminInovasiController::class, 'add'])->name('addViewInovasi');
+Route::post('/admin/inovasi/add', [App\Http\Controllers\AdminInovasiController::class, 'create'])->name('addInovasi');
+Route::get('/admin/inovasi/edit/{id}', [App\Http\Controllers\AdminInovasiController::class, 'edit'])->name('editInovasi');
+Route::post('/admin/inovasi/update', [App\Http\Controllers\AdminInovasiController::class, 'update'])->name('updateInovasi');
+Route::get('/admin/inovasi/delete/{id}', [App\Http\Controllers\AdminInovasiController::class, 'delete'])->name('deleteInovasi');
 
 Route::get('/admin/prodhukum', [App\Http\Controllers\AdminProdHukumController::class, 'index'])->name('indexProdHukum');
 Route::get('/admin/prodhukum/add', [App\Http\Controllers\AdminProdHukumController::class, 'add'])->name('addviewProdHukum');
