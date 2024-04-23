@@ -40,21 +40,22 @@ class dimensiController extends Controller
                 ->join('dimensiauthor', 'dimensiarticle.author_id', '=', 'dimensiauthor.id_author')
                 ->join('dimensicategory', 'dimensiarticle.category_id', '=', 'dimensicategory.id_category')
                 ->select('dimensiarticle.*', 'dimensiauthor.author_name', 'dimensicategory.category_name', 'dimensicategory.category_alias')
-                ->where('dimensiarticle.content', 'LIKE', '%' . $request->search . "%")
+                // ->where('dimensiarticle.content', 'LIKE', '%' . $request->search . "%")
                 ->orWhere('dimensiarticle.title', 'LIKE', '%' . $request->search . "%")
                 ->get();
-
-            if ($data) {
+    
+            if ($data->isNotEmpty()) {
                 foreach ($data as $key => $d) {
-                    $output .= '<a href="dimensidetail/' . $d->id . '"><li class="list-group-item d-flex justify-content-between align-items-start remove-border" aria-disabled="true">' . $d->content . '</li></a>';
+                    $output .= '<a href="dimensidetail/' . $d->id . '"><li class="list-group-item d-flex justify-content-between align-items-start remove-border" aria-disabled="true">' . $d->title . '</li></a>';
                 }
                 return response($output);
             } else {
                 $output = '<li class="list-group-item disabled" aria-disabled="true">Data Tidak Ditemukan</li>';
-                return response('Testing');
+                return response($output);
             }
         }
     }
+    
 
     public function page(Request $request)
     {
