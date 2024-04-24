@@ -80,7 +80,6 @@
             <tbody>
                 @foreach ($data as $d)
                 <tr>
-                    <td style="vertical-align: middle; " data-label="Jenis Dokumen" class="sorting_1"><img class="imgprodukhukum" src="https://smartcity.tangerangkota.go.id/assets/gambar/pdf.png"></td>
                     <td style="vertical-align: middle; " data-label="Produk Hukum"><a href="{{asset("data_file/$d->file_url")}}">
                             {{$d->title}}</a>
                     </td>
