@@ -10,9 +10,12 @@ class AdminInovasiController extends Controller
 {
     public function index()
     {
-        $data = DB::table('inovasi')->get();
-        return view('admin.inovasi.index', ['data' => $data]);
+        $datainovasi = DB::table('inovasi')
+        ->orderBy('created_at', 'desc') // Menyortir berdasarkan waktu terbaru
+        ->get();
+        return view('admin.inovasi.index', ['datainovasi' => $datainovasi]);
     }
+
     public function add()
     {
         return view('admin.inovasi.add');
@@ -21,7 +24,6 @@ class AdminInovasiController extends Controller
     {
         $inovasi_name = $request->inovasi_name;
         $image_url = $request->file("image_url");
-        // dd($request->all());
         $add = DB::table('inovasi')->insert([
             'inovasi_name' => $inovasi_name,
             'image_url' =>  $image_url->getClientOriginalName(),
@@ -39,10 +41,10 @@ class AdminInovasiController extends Controller
 
     public function edit($id)
     {
-        $data = DB::table('inovasi')
+        $datainovasi = DB::table('inovasi')
             ->where('id_inovasi', $id)
             ->first();
-        return view('admin.inovasi.edit', ['datainovasi' => $data]);
+        return view('admin.inovasi.edit', ['datainovasi' => $datainovasi]);
     }
     public function update(Request $request)
     {
