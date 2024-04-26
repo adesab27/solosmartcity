@@ -14,27 +14,28 @@
     <div class="footer-center">
 
       <div>
-        <a href="#"><img src="{{asset("assets/images/map.png")}}"></a>
+        <img src="{{asset("assets/images/map.png")}}">
         <p><span>Jl. Jend. Sudirman No.2, Kp. Baru</span> Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57133</p>
       </div>
 
       <div>
-        <a href="#"><img src="{{asset("assets/images/phone.png")}}"></a>
-        <p>(0271) 644315</p>
+        <a><img src="{{asset("assets/images/phone.png")}}"></a>
+        <p>(0271) 2941667</p>
       </div>
 
       <div>
-        <a href="#"><img src="{{asset("assets/images/email.png")}}"></a>
-        <p><a href="mailto:support@company.com">support@company.com</a></p>
+        <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=diskominfosp@surakarta.go.id"
+        target="_blank" rel="nofollow noopener" title="Send email with Gmail"><img src="{{asset("assets/images/email.png")}}"></a>
+        <p><a href="mailto:diskominfosp@surakarta.go.id">diskominfosp@surakarta.go.id</a></p>
       </div>
 
     </div>
 
     <div class="footer-right">
       <div class="footer-icons">
-        <a href="#"><img src="{{asset("assets/images/instagram.png")}}"></a>
-        <a href="#"><img src="{{asset("assets/images/tiktok.png")}}"></a>
-        <a href="#"><img src="{{asset("assets/images/youtube.png")}}"></i></a>
+        <a href="https://www.instagram.com/pemkot_solo/"><img src="{{asset("assets/images/instagram.png")}}"></a>
+        <a href="https://www.tiktok.com/@smartcity.solo"><img src="{{asset("assets/images/tiktok.png")}}"></a>
+        <a href="https://www.youtube.com/channel/UCL-EOcz_vh_2OlIMIh3zkyg"><img src="{{asset("assets/images/youtube.png")}}"></i></a>
       </div>
       <!-- <p class="footer-company-about">
         <span>About the company</span>
