@@ -204,16 +204,18 @@
         </div>
     </div>
 
-    
+
     <div class="container">
         <div class="card-container" id="main-swiper">
-            <div clas s="card-items" id="items">
-                <div class="card-iteem" id="item">
-                    <img class="card-item-img" src="{{ asset('assets/images/logo-ska.jpg') }}" alt="category" />
-                    <div class="card-item-circle"></div>
-                    <p class="card-item-text">PPID</p>
-                </div>
-            </div>
+            @foreach ($data as $d)
+                <a href="{{ $d->url }}" target="_blank"> <!-- Tautan yang mengarah ke URL yang sesuai -->
+                    <div class="card-iteem" id="item">
+                        <img class="card-item-img" src="{{ asset("data_file/$d->image_url") }}" alt="category" />
+                        <div class="card-item-circle"></div>
+                        <p class="card-item-text">{{ $d->title }}</p>
+                    </div>
+                </a>
+            @endforeach
             <div class="btn next" id="next">
                 <button>Next</button>
             </div>
