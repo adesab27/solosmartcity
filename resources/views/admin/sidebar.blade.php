@@ -68,7 +68,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('indexInovasi')}}" class="nav-link">
+                    <a href="{{route('staff.indexInovasi')}}" class="nav-link">
                         <i class="nav-icon far fa-copy"></i>
                         <p>
                             Inovasi

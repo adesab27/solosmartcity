@@ -67,7 +67,7 @@
                                 </div>
                                 <!-- /.card-header -->
                                 <!-- form start -->
-                                <form action="{{route('updateInovasi')}}" method="POST" enctype="multipart/form-data">
+                                <form action="{{route('staff.updateInovasi')}}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="card-body">
                                         <input name="id" type="text" class="form-control" id="exampleJudulBerita" value="{{$datainovasi->id_inovasi}}">

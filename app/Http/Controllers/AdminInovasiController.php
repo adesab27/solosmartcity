@@ -31,10 +31,10 @@ class AdminInovasiController extends Controller
         if ($add) {
             $tujuan_upload = 'data_file';
             $image_url->move($tujuan_upload, $image_url->getClientOriginalName());
-            return redirect()->route('indexInovasi')
+            return redirect()->route('satff.indexInovasi')
                 ->with('success', 'Data berhasil ditambahkan!');
         } else {
-            return redirect()->route('indexInovasi')
+            return redirect()->route('staff.indexInovasi')
                 ->with('failed', 'Data gagal ditambahkan!');
         }
     }
@@ -83,7 +83,7 @@ class AdminInovasiController extends Controller
                 'inovasi_name' => $inovasi_name,
                 'image_url' =>  $image_url->getClientOriginalName(),
             ]);
-            return redirect()->route('indexInovasi')
+            return redirect()->route('staff.indexInovasi')
                 ->with('success', 'Data berhasil diupdate!');
         }
     }
@@ -94,7 +94,7 @@ class AdminInovasiController extends Controller
         $delete = DB::table('inovasi')->where('id_inovasi', $id)->delete();
         unlink('data_file/' . $image_url->image_url);
 
-        return redirect()->route('indexInovasi')
+        return redirect()->route('staff.indexInovasi')
             ->with('success', 'Data berhasil dihapus!');
     }
 }

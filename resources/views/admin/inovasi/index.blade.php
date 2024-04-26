@@ -69,7 +69,7 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3 class="card-title">DataTable with default features</h3>
-                                    <a href="{{route('addViewInovasi')}}" class="btn btn-primary float-right">Create</a>
+                                    <a href="{{route('staff.addViewInovasi')}}" class="btn btn-primary float-right">Create</a>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
@@ -91,8 +91,8 @@
                                                     <img src="{{asset("data_file/$i->image_url")}}" width="50" height="50" alt="">
                                                 </td>
                                                 <td>
-                                                    <a class="btn btn-primary" href="{{route('editInovasi', $i->id_inovasi)}}">Edit</a>
-                                                    <a class="btn btn-danger" href="{{route('deleteInovasi', $i->id_inovasi)}}">Delete</a>
+                                                    <a class="btn btn-primary" href="{{route('staff.editInovasi', $i->id_inovasi)}}">Edit</a>
+                                                    <a class="btn btn-danger" href="{{route('staff.deleteInovasi', $i->id_inovasi)}}">Delete</a>
                                                 </td>
                                             </tr>
                                             @endforeach
